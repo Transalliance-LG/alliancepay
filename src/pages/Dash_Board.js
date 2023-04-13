@@ -77,7 +77,7 @@ const Dash_Board = () => {
                 duration: 0.5,
                 x: { duration: 1 },
               }}
-              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-center lg:text-start"
+              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-center lg:text-start leading-8"
             >
               Join the Revolution of
             </m.h4>
@@ -88,7 +88,7 @@ const Dash_Board = () => {
                 duration: 1,
                 x: { duration: 1 },
               }}
-              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-primary -mt-[10px] text-center lg:text-start"
+              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-primary  text-center lg:text-start leading-8"
             >
               Seamless Transactions
             </m.h4>
@@ -101,10 +101,10 @@ const Dash_Board = () => {
               }}
               className="flex justify-center lg:justify-start"
             >
-              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold -mt-[10px] mr-[10px]">
+              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  mr-[10px]">
                 with
               </h4>
-              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold -mt-[10px] text-primary">
+              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  text-primary">
                 AlliancePay
               </h4>
             </m.div>
@@ -130,7 +130,7 @@ const Dash_Board = () => {
                 duration: 1,
                 x: { duration: 1 },
               }}
-              className="rounded-[30px] bg-primary  text-white md:px-[18px] md:py-[12px] px-[12px] py-[8px] md:mr-[32px] mr-[15px]  text-[14px] md:text-[16px]"
+              className="rounded-[30px] bg-primary  text-white md:px-[18px] md:py-[12px] px-[12px] py-[8px] md:mr-[32px] mr-[15px]  text-[12px] sm:text-[16px]"
             >
               Get Started
             </m.button>
@@ -146,7 +146,7 @@ const Dash_Board = () => {
               <div className="bg-blue-300 flex items-center md:w-[32px] md:h-[32px] w-[25px] h-[25px] justify-center rounded-full mr-[16px]">
                 <img src={light} />
               </div>
-              <h4 className="font-semibold text-[12px] md:text-[14px] ">
+              <h4 className="font-semibold text-[12px] sm:text-[14px] text-center w-[120px] sm:w-auto">
                 5% Cashback For New users
               </h4>
             </m.div>
@@ -213,7 +213,7 @@ const Dash_Board = () => {
             <div className="bg-blue-300 flex items-center md:w-[32px] md:h-[32px] w-[25px] h-[25px] justify-center rounded-full mr-[12px]">
               <img src={light} />
             </div>
-            <h1 className="text-[20px] xl:text-[32px] font-semibold">
+            <h1 className="md:text-[20px] text-[16px] xl:text-[32px] font-semibold">
               Redefining Product Features
             </h1>
           </div>
@@ -447,7 +447,7 @@ const Dash_Board = () => {
             <div className="xl:col-start-1 xl:col-end-2 z-40 mt-[32px] md-[0px]">
               <div className="flex justify-center">
                 <div className="z-40 ">
-                  <div className="z-40 relative px-[30px] pt-[15px] pb-[7px] w-[375px] md:w-[430px] xl:w-[475px]">
+                  <div className="z-40 relative px-[30px] pt-[15px] pb-[7px] sm:w-[375px] w-[350px] md:w-[430px] xl:w-[475px]">
                     <div className="absolute top-0 left-0 w-[30px]">
                       <img src={quote1} />
                     </div>
