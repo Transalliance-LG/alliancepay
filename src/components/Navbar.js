@@ -61,7 +61,7 @@ const Navbar = () => {
           show ? "translate-y-0" : "-translate-y-full"
         } ease-in-out duration-700`}
       >
-        <div className="bg-white lg:py-[16px] py-[20px] flex justify-between items-center lg:hidden">
+        <div className="bg-white lg:py-[16px] py-[20px] flex justify-between items-center xl:hidden">
           <div>
             <img src={logo} />
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <div className=" lg:hidden">
+          <div className=" xl:hidden">
             <div className=" flex items-center lg:px-[16px]">
               <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] ">
                 Demo
