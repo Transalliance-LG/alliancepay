@@ -584,7 +584,7 @@ const Dash_Board = () => {
         </div>
 
         <div className="lg:grid lg:grid-cols-3 gap-y-[35px] mx-auto items-end">
-          <div className="pt-[40px] lg:pt-[0px] pb-[40px] sm:pb-[0px] border-b-[1px] sm:border-r-[1px] sm:border-b-[0px] border-gray-300">
+          <div className="pt-[40px] lg:pt-[0px] ">
             <div className="flex justify-center">
               <img className="-mr-[13px]" src={profile1} />
               <img className="-mr-[13px]" src={profile2} />
