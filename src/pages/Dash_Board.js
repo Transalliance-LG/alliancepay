@@ -8,13 +8,13 @@ import sis from "../assets/sis.png";
 import circooles from "../assets/circooles.png";
 import catalog from "../assets/catalog.png";
 import quotient from "../assets/quotient.png";
-import accept from "../assets/accept.png";
+import accept from "../assets/accept.svg";
 import icon1 from "../assets/icon1.png";
-import make from "../assets/make.png";
+import make from "../assets/make.svg";
 import icon2 from "../assets/icon2.png";
-import detailed from "../assets/detailed.png";
+import detailed from "../assets/detailed.svg";
 import icon3 from "../assets/icon3.png";
-import get from "../assets/get.png";
+import get from "../assets/get.svg";
 import icon4 from "../assets/icon4.png";
 import arrow from "../assets/arrow.png";
 import background02 from "../assets/background02.png";
@@ -41,6 +41,8 @@ import profile3 from "../assets/profile3.png";
 import profile4 from "../assets/profile4.png";
 import star from "../assets/star.png";
 import card from "../assets/card.png";
+import background5 from "../assets/background5.png";
+import pci from "../assets/pci.png";
 
 const Dash_Board = () => {
   return (
@@ -77,7 +79,7 @@ const Dash_Board = () => {
                 duration: 0.5,
                 x: { duration: 1 },
               }}
-              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-center lg:text-start leading-8"
+              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-center lg:text-start leading-10"
             >
               Join the Revolution of
             </m.h4>
@@ -88,7 +90,7 @@ const Dash_Board = () => {
                 duration: 1,
                 x: { duration: 1 },
               }}
-              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-primary  text-center lg:text-start leading-8"
+              className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-primary  text-center lg:text-start leading-10"
             >
               Seamless Transactions
             </m.h4>
@@ -101,10 +103,10 @@ const Dash_Board = () => {
               }}
               className="flex justify-center lg:justify-start"
             >
-              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  mr-[10px]">
+              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  mr-[10px] leading-10">
                 with
               </h4>
-              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  text-primary">
+              <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  text-primary leading-10">
                 AlliancePay
               </h4>
             </m.div>
@@ -226,7 +228,7 @@ const Dash_Board = () => {
           </h4>
         </div>
 
-        <div className="grid grid-cols-2 xl:grid-cols-3 gap-[25px]">
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-[14px] xl:gap-[25px]">
           <div className="bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-3 col-start-1 col-end-3">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
@@ -238,7 +240,7 @@ const Dash_Board = () => {
             </div>
             <div className="grid grid-cols-2 lg:gap-[70px] gap-[25px] lg:items-end items-center ">
               <div className="">
-                <h4 className="mt-[95px] text-[12px] md:text-[16px]">
+                <h4 className="mt-[30px] text-[12px] md:text-[16px]">
                   AlliancePay provides businesses with an easy-to-use payment
                   processing solution that integrates seamlessly with popular
                   e-commerce platforms. The payment gateway is designed to work
@@ -267,7 +269,7 @@ const Dash_Board = () => {
                 Make payments
               </h1>
             </div>
-            <div className="flex justify-center mt-[15px]">
+            <div className="flex justify-center mt-[15px] h-[62px] w-[62px] md:w-auto md:h-auto mx-auto">
               <img src={make} />
             </div>
             <h4 className="mt-[8px] text-[12px] md:text-[16px]">
@@ -285,7 +287,7 @@ const Dash_Board = () => {
             </div>
           </div>
 
-          <div className="bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-2 col-start-2 col-end-3">
+          <div className="bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-2 col-start-2 col-end-3 content-end">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon3} />
@@ -294,7 +296,7 @@ const Dash_Board = () => {
                 Detailed reporting
               </h1>
             </div>
-            <div className="flex justify-center mt-[15px]">
+            <div className="flex justify-center mt-[15px] h-[62px] w-[62px] md:w-auto md:h-auto mx-auto">
               <img src={detailed} />
             </div>
             <h4 className="mt-[8px] text-[12px] md:text-[16px]">
@@ -322,7 +324,7 @@ const Dash_Board = () => {
             </div>
             <div className="grid grid-cols-2 lg:gap-[70px] gap-[25px] lg:items-end items-center">
               <div className="">
-                <h4 className="mt-[95px] text-[12px] md:text-[16px]">
+                <h4 className="mt-[30px] text-[12px] md:text-[16px]">
                   Transaction time out? Payment not reflected? Receipt status
                   unknown? No problem, we’ve got our AI engine monitoring
                   transactitons in realtime. You can login to your business
@@ -444,34 +446,34 @@ const Dash_Board = () => {
             <div className=" xl:col-start-2 xl:col-end-3 z-40 flex justify-center">
               <img src={background3} />
             </div>
-            <div className="xl:col-start-1 xl:col-end-2 z-40 mt-[32px] md-[0px]">
+            <div className="xl:col-start-1 xl:col-end-2 z-40 mt-[32px] mb-[0px]">
               <div className="flex justify-center">
                 <div className="z-40 ">
-                  <div className="z-40 relative px-[30px] pt-[15px] pb-[7px] sm:w-[375px] w-[350px] md:w-[430px] xl:w-[475px]">
-                    <div className="absolute top-0 left-0 w-[30px]">
+                  <div className="z-40 relative px-[18px] md:px-[30px] pt-[15px] pb-[7px] w-[270px] sm:w-[270px]  md:w-[430px] xl:w-[475px]">
+                    <div className="absolute top-0 left-0 md:w-[30px] w-[20px]">
                       <img src={quote1} />
                     </div>
-                    <div className="absolute bottom-0 right-0 w-[30px]">
+                    <div className="absolute bottom-0 right-0 md:w-[30px] w-[20px]">
                       <img src={quote2} />
                     </div>
                     <div className="flex ">
-                      <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold -mt-[10px] mr-[10px] z-40">
+                      <h4 className="md:text-[35px] text-[22px] xl:text-[40px] font-semibold -mt-[10px] mr-[10px] z-40">
                         Simple
                       </h4>
-                      <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold -mt-[10px] text-primary z-40">
+                      <h4 className="md:text-[35px] text-[22px] xl:text-[40px] font-semibold -mt-[10px] text-primary z-40">
                         integrations.
                       </h4>
                     </div>
-                    <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  lg:text-start -mt-[10px] z-40">
+                    <h4 className="md:text-[35px] text-[22px] xl:text-[40px] font-semibold  lg:text-start -mt-[10px] z-40">
                       Build for developers.
                     </h4>
                   </div>
 
-                  <h4 className="mt-[10px] text-[12px] md:text-[16px]  z-40 px-[30px]">
+                  <h4 className="mt-[10px] text-[12px] md:text-[16px]  z-40 px-[18px] md:px-[30px]">
                     Build custom payments experiences with well-documented APIs
                   </h4>
 
-                  <button className=" flex text-white bg-primary items-center text-[12px] md:text-[16px] font-semibold mt-[43px] z-40 px-[18px] py-[12px] rounded-[30px] mx-[30px]">
+                  <button className=" flex text-white bg-primary items-center text-[12px] md:text-[16px] font-semibold mt-[43px] z-40 px-[18px] py-[12px] rounded-[30px] mx-[18px] md:px-[30px]">
                     Explore the Docs
                     <div className="w-[8px] md:w-[12px] ml-[10px] ">
                       <img src={arrow02} />
@@ -496,6 +498,56 @@ const Dash_Board = () => {
         </div>
       </div>
 
+      <div className="bg-white pt-[64px] md:pb-[40px]  xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
+        <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:grid-flow-col md:gap-x-[25px]  lg:gap-x-[40px] items-center">
+          <div className="md:col-start-1 md:col-end-2 z-40">
+            <div className="flex justify-center">
+              <div className="z-40 ">
+                <div className="z-40 relative  pt-[15px] pb-[7px] w-[270px] sm:w-auto">
+                  <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold  lg:text-start -mt-[10px] z-40">
+                    Secured Payment
+                  </h4>
+                  <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold -mt-[10px] text-primary z-40">
+                    Simplified
+                  </h4>
+                  <div className="flex ">
+                    <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold -mt-[10px] mr-[10px] z-40">
+                      The AlliancePay
+                    </h4>
+                  </div>
+                  <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold  lg:text-start -mt-[10px] z-40">
+                    Advantage
+                  </h4>
+                </div>
+
+                <h4 className="mt-[10px] text-[12px] md:text-[16px]  z-40  mb-[24px] md:mt-[0px]">
+                  To ensure a secure and seamless payment experience for our
+                  customers, we have developed a payment infrastructure with
+                  security at its core. Our advanced system is equipped with a
+                  real-time AML transaction monitoring system that safeguards
+                  all transactions in real-time.
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div className=" md:col-start-2 md:col-end-3 z-40 flex justify-center">
+            <img src={background5} />
+          </div>
+          <h4 className="  md:col-start-1 md:col-end-2 z-40  font-light">
+            <div className="xl:grid md:grid-cols-3 xl:items-center">
+              <h4 className="text-[10px] md:text-[16px] col-start-1 col-end-3 mt-[24px] md:mt-[0px]">
+                We take security and compliance seriously. That's why we invest
+                in resources that keep us compliant with regulatory standards,
+                keeping you and your money safe from bad actors.
+              </h4>
+              <div className=" col-start-3 col-end-4 ">
+                <img className="mx-auto" src={pci} />
+              </div>
+            </div>
+          </h4>
+        </div>
+      </div>
+
       <div className="bg-white py-[64px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <div className="relative ">
           <div className="absolute bottom-0 right-0 hidden md:flex">
@@ -503,10 +555,10 @@ const Dash_Board = () => {
           </div>
           <div className=" md:py-[124px] py-[13px]   lg:px-[86px] px-[52px] md:px-[30px] bg-gradient-to-br from-primary via-indigo-400 to-blue-300 md:rounded-[30px] rounded-[11px] ">
             <div className="">
-              <h4 className="text-white text-[16px] md:text-[18px] font-extralight">
+              <h4 className="text-white text-[14px] md:text-[18px] font-extralight">
                 Checkout, API
               </h4>
-              <h4 className="md:text-[35px] text-[23px] xl:text-[40px] font-semibold text-white md:w-[550px] xl:w-[600px] leading-8 md:leading-10">
+              <h4 className="md:text-[35px] text-[20px] xl:text-[40px] font-semibold text-white md:w-[550px] xl:w-[600px] leading-8 md:leading-10">
                 Better payment experiences with optimized checkout
               </h4>
               <button className=" flex text-primary bg-white items-center text-[12px] md:text-[16px] font-semibold mt-[14px] z-40 px-[18px] py-[12px] rounded-[30px]">
