@@ -23,7 +23,7 @@ const Navbar = ({ show, setShow }) => {
             </div>
           </div>
           <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] px-[16px]">
-            Why alliancepay
+            <Link to="/about">About Us</Link>
           </h4>
 
           <div className=" flex items-center px-[16px]">
@@ -32,7 +32,7 @@ const Navbar = ({ show, setShow }) => {
             </h4>
           </div>
           <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] px-[16px]">
-            <Link to="/contact_us">Contact us</Link>
+            <Link to="/contact_us">Contact Us</Link>
           </h4>
         </div>
         <div className="xl:flex hidden items-center">
@@ -81,7 +81,7 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] lg:px-[16px] flex justify-center hover:cursor-pointer"
               >
-                Why alliancepay
+                <Link to="/about">About Us</Link>
               </h4>
             </div>
 
@@ -98,7 +98,7 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] lg:px-[16px] flex justify-center  hover:cursor-pointer"
               >
-                <Link to="/contact_us">Contact us</Link>
+                <Link to="/contact_us">Contact Us</Link>
               </h4>
             </div>
             <div className="h-[70px] min-h-fit">
