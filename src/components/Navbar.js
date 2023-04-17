@@ -54,8 +54,8 @@ const Navbar = ({ show, setShow }) => {
       </div>
 
       <div
-        className={`top-0 left-0 z-40 absolute bg-white w-full h-screen lg:px-[70px] px-[15px] md:px-[30px] ${
-          show ? "translate-y-0" : "-translate-y-[900px]"
+        className={`top-0 left-0 z-40 absolute bg-white w-full h-screen lg:px-[70px] px-[15px] md:px-[30px] xl:hidden ${
+          show ? "translate-y-0" : "-translate-y-[1300px]"
         } ease-in-out duration-500`}
       >
         <div className="bg-white lg:py-[16px] py-[20px] flex justify-between items-center xl:hidden">

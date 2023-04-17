@@ -12,14 +12,19 @@ function App() {
   return (
     <Router>
       <div className="font-poppins">
+        {" "}
         <Navbar show={show} setShow={setShow} />
-        {show ? null : (
+      </div>
+
+      <div className={show ? `font-poppins hidden xl:inline` : ` font-poppins`}>
+        <div>
           <Routes>
             <Route exact path="/" element={<Dash_Board />} />
             <Route exact path="/:page" element={<PageRender />} />
           </Routes>
-        )}
-        {show ? null : <Footer />}
+
+          <Footer />
+        </div>
       </div>
     </Router>
   );
