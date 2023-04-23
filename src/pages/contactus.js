@@ -1,11 +1,33 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import mail from "../assets/mail.png";
 import office from "../assets/office.png";
 import phone from "../assets/phone.png";
 import contactbg from "../assets/contactbg.png";
 
-const contact_us = () => {
+const Contactus = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_pgq9k7n",
+        "template_zdrbwii",
+        form.current,
+        "GjlSR1KFLOPRMtcou"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div>
       <div className="bg-blue-50 py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
@@ -95,24 +117,26 @@ const contact_us = () => {
               </h4>
             </div>
           </div>
-          <div>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="md:grid grid-cols-2 2xl:gap-[32px] gap-[15px]">
               <div className="mt-[24px]">
                 <h4 className="mb-[6px] text-[16px] ">First name</h4>
                 <input
                   className=" w-full border-[1px] border-gray-300 px-[16px] py-[12px]  rounded-[8px]"
-                  type="phone"
-                  name="phone"
+                  type="text"
+                  name="first_name"
                   placeholder="First name"
+                  required
                 />
               </div>
               <div className="mt-[24px]">
                 <h4 className="mb-[6px] text-[16px] ">Second name</h4>
                 <input
                   className=" w-full border-[1px] border-gray-300 px-[16px] py-[12px]  rounded-[8px]"
-                  type="phone"
-                  name="phone"
+                  type="text"
+                  name="second_name"
                   placeholder="Second name"
+                  required
                 />
               </div>
             </div>
@@ -123,6 +147,7 @@ const contact_us = () => {
                 type="email"
                 name="email"
                 placeholder="you@company.com"
+                required
               />
             </div>
             <div className="mt-[24px]">
@@ -132,6 +157,7 @@ const contact_us = () => {
                 type="phone"
                 name="phone"
                 placeholder="NG"
+                required
               />
             </div>
             <div className="mt-[24px]">
@@ -148,10 +174,13 @@ const contact_us = () => {
                 You agree to our friendly privacy policy.
               </h4>
             </div>
-            <button className="mt-[32px] flex justify-center w-full text-white bg-primary lg:text-[16px] text-[14px] py-[12px] rounded-[8px]">
+            <button
+              type="submit"
+              className="mt-[32px] flex justify-center w-full text-white bg-primary lg:text-[16px] text-[14px] py-[12px] rounded-[8px]"
+            >
               Send message
             </button>
-          </div>
+          </form>
         </div>
         <div className="hidden lg:flex">
           <img src={contactbg} />
@@ -161,4 +190,4 @@ const contact_us = () => {
   );
 };
 
-export default contact_us;
+export default Contactus;

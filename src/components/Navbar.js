@@ -32,7 +32,7 @@ const Navbar = ({ show, setShow }) => {
             </h4>
           </div>
           <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] px-[16px]">
-            <Link to="/contact_us">Contact Us</Link>
+            <Link to="/contactus">Contact Us</Link>
           </h4>
         </div>
         <div className="xl:flex hidden items-center">
@@ -98,7 +98,7 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] lg:px-[16px] flex justify-center  hover:cursor-pointer"
               >
-                <Link to="/contact_us">Contact Us</Link>
+                <Link to="/contactus">Contact Us</Link>
               </h4>
             </div>
             <div className="h-[70px] min-h-fit">

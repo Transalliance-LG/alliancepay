@@ -44,7 +44,7 @@ import card from "../assets/card.png";
 import background5 from "../assets/background5.png";
 import pci from "../assets/pci.png";
 
-const Dash_Board = () => {
+const Dashboard = () => {
   return (
     <div>
       <div className="bg-blue-50 py-[58px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px] lg:grid grid-cols-2 items-center">
@@ -228,8 +228,8 @@ const Dash_Board = () => {
           </h4>
         </div>
 
-        <div className="grid grid-cols-2 xl:grid-cols-3 gap-[14px] xl:gap-[25px]">
-          <div className="bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-3 col-start-1 col-end-3">
+        <div className="sm:grid sm:grid-cols-2 xl:grid-cols-3 gap-[14px] xl:gap-[25px]">
+          <div className="hidden sm:block bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-3 col-start-1 col-end-3">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon1} />
@@ -260,7 +260,36 @@ const Dash_Board = () => {
             </div>
           </div>
 
-          <div className=" bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-3 xl:col-end-4 col-start-1 col-end-2">
+          <div className=" sm:hidden bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-3 xl:col-end-4 col-start-1 col-end-2">
+            <div className="flex items-center">
+              <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
+                <img src={icon1} />
+              </div>
+              <h1 className="text-[14px] 2xl:text-[22px] lg:text-[24px] font-semibold">
+                Accept payments
+              </h1>
+            </div>
+            <div className="flex justify-center mt-[15px] h-[62px] w-[62px] md:w-auto md:h-auto mx-auto">
+              <img src={accept} />
+            </div>
+            <h4 className="mt-[8px] text-[12px] md:text-[16px]">
+              AlliancePay provides businesses with an easy-to-use payment
+              processing solution that integrates seamlessly with popular
+              e-commerce platforms. The payment gateway is designed to work
+              efficiently and effectively, allowing businesses to manage
+              transactions with ease.
+            </h4>
+            <div className="flex justify-start">
+              <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                Start now
+                <div className="w-[8px] md:w-[12px] ml-[10px]">
+                  <img src={arrow} />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div className="  mt-[15px] sm:mt-[0px] bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-3 xl:col-end-4 col-start-1 col-end-2">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon2} />
@@ -277,7 +306,7 @@ const Dash_Board = () => {
               them to deliver value directly to local bank accounts and mobile
               wallets.
             </h4>
-            <div className="flex justify-end">
+            <div className="flex justify-start">
               <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
                 Start now
                 <div className="w-[8px] md:w-[12px] ml-[10px]">
@@ -287,7 +316,7 @@ const Dash_Board = () => {
             </div>
           </div>
 
-          <div className="bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-2 col-start-2 col-end-3 content-end">
+          <div className="mt-[15px] sm:mt-[0px] bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-2 col-start-2 col-end-3 content-end">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon3} />
@@ -303,7 +332,7 @@ const Dash_Board = () => {
               Understand your customers’ purchase patterns and do easy
               reconciliations with a robust data Dashboard and easy exports.
             </h4>
-            <div className="flex justify-end">
+            <div className="flex justify-start">
               <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
                 Start now
                 <div className="w-[8px] md:w-[12px] ml-[10px]">
@@ -313,7 +342,35 @@ const Dash_Board = () => {
             </div>
           </div>
 
-          <div className="bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px]  xl:col-start-2 xl:col-end-4 col-start-1 col-end-3">
+          <div className="mt-[15px] sm:mt-[0px] bg-white sm:hidden lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-2 col-start-2 col-end-3 content-end">
+            <div className="flex items-center">
+              <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
+                <img src={icon4} />
+              </div>
+              <h1 className="text-[14px] 2xl:text-[22px] lg:text-[24px] font-semibold">
+                Get true value for your business
+              </h1>
+            </div>
+            <div className="flex justify-center mt-[15px] h-[62px] w-[62px] md:w-auto md:h-auto mx-auto">
+              <img src={get} />
+            </div>
+            <h4 className="mt-[8px] text-[12px] md:text-[16px]">
+              Transaction time out? Payment not reflected? Receipt status
+              unknown? No problem, we’ve got our AI engine monitoring
+              transactitons in realtime. You can login to your business profile
+              and confirm status of transaction, resolve disputes etc.
+            </h4>
+            <div className="flex justify-start">
+              <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                Start now
+                <div className="w-[8px] md:w-[12px] ml-[10px]">
+                  <img src={arrow} />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div className="hidden sm:block bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px]  xl:col-start-2 xl:col-end-4 col-start-1 col-end-3">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon4} />
@@ -678,4 +735,4 @@ const Dash_Board = () => {
   );
 };
 
-export default Dash_Board;
+export default Dashboard;

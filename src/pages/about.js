@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import abouticon from "../assets/abouticon.png";
 import background02 from "../assets/background02.png";
 import down2 from "../assets/down2.png";
@@ -6,7 +6,49 @@ import ceo from "../assets/ceo.png";
 import md from "../assets/md.png";
 import cfo from "../assets/cfo.png";
 
-const about = () => {
+const About = () => {
+  const [clickedIndex, setClickedIndex] = useState({});
+
+  const handleClick = (index) => () => {
+    setClickedIndex((state) => ({
+      ...state,
+      [index]: !state[index],
+    }));
+  };
+
+  const Dropdown = [
+    {
+      title: "Do I get any discounts?",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "Who bears the cost of a transaction?",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "Does Alliancepay offer chargeback levels?",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "How does a discount work?",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "Do I get to meet the Alliancepay team?",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "Where is Alliancepay office located?",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+  ];
+
   return (
     <div>
       <div className="bg-blue-50 py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
@@ -230,7 +272,34 @@ const about = () => {
                 New
               </button>
             </div>
-            <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
+
+            {Dropdown.map((drop, i) => (
+              <div key={i} className="border-b-[1px] border-gray-300">
+                <div
+                  onClick={handleClick(i)}
+                  className="py-[28px] px-[32px] flex justify-between items-center "
+                >
+                  <h4 className="text-[12px] md:text-[16px] lg:text-[16px] cursor-pointer font-medium">
+                    {drop.title}
+                  </h4>
+                  <div
+                    onClick={handleClick(i)}
+                    className={`text-sm duration-300 cursor-pointer ${
+                      clickedIndex[i] ? "rotate-90" : "rotate-0"
+                    } `}
+                  >
+                    <img onClick={handleClick(i)} src={down2} />
+                  </div>
+                </div>
+                {clickedIndex[i] ? (
+                  <h4 className="text-[10px] md:text-[14px] lg:text-[16px]py-[34px] px-[38px] font-light -mt-[20px] mb-[28px]">
+                    {drop.content}
+                  </h4>
+                ) : null}
+              </div>
+            ))}
+
+            {/* <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
               <h4 className="text-[12px] md:text-[16px] lg:text-[16px] font-medium">
                 Do I get any discounts?
               </h4>
@@ -277,7 +346,7 @@ const about = () => {
               <div>
                 <img src={down2} />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-[64px] py-[32px]">
@@ -311,4 +380,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

@@ -1,10 +1,40 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import down2 from "../assets/down2.png";
 
-const documentation = () => {
+const Documentation = () => {
+  const [clickedIndex, setClickedIndex] = useState({});
+
+  const handleClick = (index) => () => {
+    setClickedIndex((state) => ({
+      ...state,
+      [index]: !state[index],
+    }));
+  };
+
+  const Dropdown = [
+    {
+      title: "Introduction",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "Installation",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "Get started",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+    {
+      title: "Server settings",
+      content:
+        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+    },
+  ];
+
   return (
     <div>
       <div className="bg-blue-50 py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
@@ -68,15 +98,33 @@ const documentation = () => {
           </h4>
         </div>
         <div className=" border-[1px] border-gray-200 rounded-[5px] mt-[24px]">
-          <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
-            <h4 className="text-[12px] md:text-[16px] lg:text-[16px]">
-              Introduction
-            </h4>
-            <div>
-              <img src={down2} />
+          {Dropdown.map((drop, i) => (
+            <div key={i} className="border-b-[1px] border-gray-300">
+              <div
+                onClick={handleClick(i)}
+                className="py-[28px] px-[32px] flex justify-between items-center "
+              >
+                <h4 className="text-[12px] md:text-[16px] lg:text-[16px] cursor-pointer font-medium">
+                  {drop.title}
+                </h4>
+                <div
+                  onClick={handleClick(i)}
+                  className={`text-sm duration-300 cursor-pointer ${
+                    clickedIndex[i] ? "rotate-90" : "rotate-0"
+                  } `}
+                >
+                  <img onClick={handleClick(i)} src={down2} />
+                </div>
+              </div>
+              {clickedIndex[i] ? (
+                <h4 className="text-[10px] md:text-[14px] lg:text-[16px]py-[34px] px-[38px] font-light -mt-[20px] mb-[28px]">
+                  {drop.content}
+                </h4>
+              ) : null}
             </div>
-          </div>
-          <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
+          ))}
+
+          {/* <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
             <h4 className="text-[12px] md:text-[16px] lg:text-[16px]">
               Installation
             </h4>
@@ -99,7 +147,7 @@ const documentation = () => {
             <div>
               <img src={down2} />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -119,4 +167,4 @@ const documentation = () => {
   );
 };
 
-export default documentation;
+export default Documentation;
