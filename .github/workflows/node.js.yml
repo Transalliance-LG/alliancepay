@@ -12,9 +12,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - name: one
-        run: npm ci
-      - name: two
-        run: npm run build --if-present
-      - name: three
-        run: npm test
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
