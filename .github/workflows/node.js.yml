@@ -1,5 +1,20 @@
-steps:
-  - uses: actions/checkout@v2
-  - run: npm install
-  - run: npm test
-  - run: npm build
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: kubowania/my-javascript-action@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: one
+        run: npm ci
+      - name: two
+        run: npm run build --if-present
+      - name: three
+        run: npm test
