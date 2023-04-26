@@ -87,7 +87,7 @@ const About = () => {
         px-[15px] py-[15px] md:px-[30px] md:py-[30px] bg-gray-100"
         >
           <div>
-            <img className="w-[120px]" src={abouticon} />
+            <img className="md:w-[120px] w-[52px]" src={abouticon} />
           </div>
           <div className="md:ml-[30px] mt-[16px] md:mt-[0px]">
             <h4 className="text-[12px] md:text-[16px] text-gray-500 mb-[23px]">
@@ -130,7 +130,7 @@ const About = () => {
             <ol>
               <li className="font-semibold">
                 <div className="mb-[35px] ">
-                  <h4 lassName=" mt-[6px] lg:mt-[19px]  md:text-[16px] mb-[16px]   text-black mb-[4px] ">
+                  <h4 className=" mt-[6px] lg:mt-[19px]  md:text-[16px] mb-[16px]   text-black mb-[4px] ">
                     Our Coverage
                   </h4>
                   <h4 className=" mt-[6px] lg:mt-[19px] text-[12px] md:text-[16px] mb-[16px] lg:mb-[16px] font-normal  text-black ">

@@ -213,7 +213,7 @@ const Dashboard = () => {
         <div className="flex justify-center">
           <div className="flex justify-center items-center px-[16px] py-[8px] bg-white rounded-[60px] ">
             <div className="bg-blue-300 flex items-center md:w-[32px] md:h-[32px] w-[25px] h-[25px] justify-center rounded-full mr-[12px]">
-              <img src={light} />
+              <img className="w-[20px] h-[20px]" src={light} />
             </div>
             <h1 className="md:text-[20px] text-[16px] xl:text-[32px] font-semibold">
               Redefining Product Features
