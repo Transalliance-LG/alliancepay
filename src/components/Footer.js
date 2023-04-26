@@ -18,16 +18,16 @@ const Footer = () => {
           </h4>
           <div className="grid grid-cols-4 w-[200px]">
             <div>
-              <img src={facebook} />
+              <img className="w-[24px] h-[24px]" src={facebook} />
             </div>
             <div>
-              <img src={google} />
+              <img className="w-[24px] h-[24px]" src={google} />
             </div>
             <div>
-              <img src={apple} />
+              <img className="w-[24px] h-[24px]" src={apple} />
             </div>
             <div>
-              <img src={instagram} />
+              <img className="w-[24px] h-[24px]" src={instagram} />
             </div>
           </div>
         </div>
@@ -46,16 +46,16 @@ const Footer = () => {
             </h4>
             <div className="grid grid-cols-4 w-[200px]">
               <div>
-                <img src={facebook} />
+                <img className="w-[24px] h-[24px]" src={facebook} />
               </div>
               <div>
-                <img src={google} />
+                <img className="w-[24px] h-[24px]" src={google} />
               </div>
               <div>
-                <img src={apple} />
+                <img className="w-[24px] h-[24px]" src={apple} />
               </div>
               <div>
-                <img src={instagram} />
+                <img className="w-[24px] h-[24px]" src={instagram} />
               </div>
             </div>
           </div>

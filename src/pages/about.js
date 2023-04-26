@@ -87,7 +87,7 @@ const About = () => {
         px-[15px] py-[15px] md:px-[30px] md:py-[30px] bg-gray-100"
         >
           <div>
-            <img src={abouticon} />
+            <img className="w-[120px]" src={abouticon} />
           </div>
           <div className="md:ml-[30px] mt-[16px] md:mt-[0px]">
             <h4 className="text-[12px] md:text-[16px] text-gray-500 mb-[23px]">
@@ -204,7 +204,7 @@ const About = () => {
           <div className="flex justify-center">
             <div>
               <div>
-                <img src={ceo} />
+                <img className="w-[384px]" src={ceo} />
               </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Kamsi Okafor
@@ -218,7 +218,7 @@ const About = () => {
           <div className="flex justify-center mt-[32px] lg:mt-[0px]">
             <div>
               <div>
-                <img src={md} />
+                <img className="w-[384px]" src={md} />
               </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Afam Obodozie
@@ -230,7 +230,7 @@ const About = () => {
           <div className="flex justify-center mt-[32px] lg:mt-[0px]">
             <div>
               <div>
-                <img src={cfo} />
+                <img className="w-[384px]" src={cfo} />
               </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Femi Adedipe
@@ -288,7 +288,11 @@ const About = () => {
                       clickedIndex[i] ? "rotate-90" : "rotate-0"
                     } `}
                   >
-                    <img onClick={handleClick(i)} src={down2} />
+                    <img
+                      className="w-[10px]"
+                      onClick={handleClick(i)}
+                      src={down2}
+                    />
                   </div>
                 </div>
                 {clickedIndex[i] ? (

@@ -146,7 +146,7 @@ const Dashboard = () => {
               className="flex items-center"
             >
               <div className="bg-blue-300 flex items-center md:w-[32px] md:h-[32px] w-[25px] h-[25px] justify-center rounded-full mr-[16px]">
-                <img src={light} />
+                <img className="w-[20px] h-[20px]" src={light} />
               </div>
               <h4 className="font-semibold text-[12px] sm:text-[14px] text-center w-[120px] sm:w-auto">
                 5% Cashback For New users
@@ -167,43 +167,43 @@ const Dashboard = () => {
         </m.div>
       </div>
 
-      <div className="xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px] py-[96px]">
+      <div className="xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px] py-[40px]">
         <h4 className="mb-[32px] flex justify-center">
           Join 4,000+ companies already growing
         </h4>
         <div className="slider flex whitespace-nowrap">
           <div className=" slide-track ">
             <div className="slide">
-              <img src={layer2} />
+              <img className="w-[160px]" src={layer2} />
             </div>
             <div className="slide">
-              <img src={sis} />
+              <img className="w-[160px]" src={sis} />
             </div>
             <div className="slide">
-              <img src={circooles} />
+              <img className="w-[160px]" src={circooles} />
             </div>
             <div className="slide">
-              <img src={catalog} />
+              <img className="w-[160px]" src={catalog} />
             </div>
             <div className="slide">
-              <img src={quotient} />
+              <img className="w-[160px]" src={quotient} />
             </div>
           </div>
           <div className=" slide-track ">
             <div className="slide">
-              <img src={layer2} />
+              <img className="w-[160px]" src={layer2} />
             </div>
             <div className="slide">
-              <img src={sis} />
+              <img className="w-[160px]" src={sis} />
             </div>
             <div className="slide">
-              <img src={circooles} />
+              <img className="w-[160px]" src={circooles} />
             </div>
             <div className="slide">
-              <img src={catalog} />
+              <img className="w-[160px]" src={catalog} />
             </div>
             <div className="slide">
-              <img src={quotient} />
+              <img className="w-[160px]" src={quotient} />
             </div>
           </div>
         </div>
@@ -221,15 +221,15 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <h4 className="mt-[4px] text-[12px] md:text-[16px] mb-[64px] text-center lg:w-[800px] ">
+          <h4 className="mt-[12px] text-[12px] md:text-[16px] mb-[64px] text-center lg:w-[800px] ">
             Keeping your eye on the ball while performing a deep dive on the
             start-up mentality to derive convergence on cross-platform
             integration.
           </h4>
         </div>
 
-        <div className="sm:grid sm:grid-cols-2 xl:grid-cols-3 gap-[14px] xl:gap-[25px]">
-          <div className="hidden sm:block bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-3 col-start-1 col-end-3">
+        <div className="sm:grid sm:grid-cols-2 2xl:grid-cols-3 gap-[14px] xl:gap-[25px]">
+          <div className="hidden sm:block bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] 2xl:col-start-1 2xl:col-end-3 col-start-1 col-end-3">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon1} />
@@ -260,7 +260,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className=" sm:hidden bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-3 xl:col-end-4 col-start-1 col-end-2">
+          <div className=" sm:hidden bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] 2xl:col-start-3 2xl:col-end-4 col-start-1 col-end-2">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon1} />
@@ -289,7 +289,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="  mt-[15px] sm:mt-[0px] bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-3 xl:col-end-4 col-start-1 col-end-2">
+          <div className="  mt-[15px] sm:mt-[0px] bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] 2xl:col-start-3 2xl:col-end-4 col-start-1 col-end-2">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon2} />
@@ -316,7 +316,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="mt-[15px] sm:mt-[0px] bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-2 col-start-2 col-end-3 content-end">
+          <div className="mt-[15px] sm:mt-[0px] bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] 2xl:col-start-1 2xl:col-end-2 col-start-2 col-end-3 content-end">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon3} />
@@ -342,7 +342,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="mt-[15px] sm:mt-[0px] bg-white sm:hidden lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] xl:col-start-1 xl:col-end-2 col-start-2 col-end-3 content-end">
+          <div className="mt-[15px] sm:mt-[0px] bg-white sm:hidden lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] 2xl:col-start-1 2xl:col-end-2 col-start-2 col-end-3 content-end">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon4} />
@@ -370,7 +370,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="hidden sm:block bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px]  xl:col-start-2 xl:col-end-4 col-start-1 col-end-3">
+          <div className="hidden sm:block bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px]  2xl:col-start-2 2xl:col-end-4 col-start-1 col-end-3">
             <div className="flex items-center">
               <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
                 <img src={icon4} />
@@ -598,7 +598,7 @@ const Dashboard = () => {
                 keeping you and your money safe from bad actors.
               </h4>
               <div className=" col-start-3 col-end-4 ">
-                <img className="mx-auto" src={pci} />
+                <img className="mx-auto w-[119px]" src={pci} />
               </div>
             </div>
           </h4>
@@ -633,7 +633,7 @@ const Dashboard = () => {
         <div className="sm:grid sm:grid-cols-2 xl:grid-cols-4 gap-y-[35px] w-[180px] sm:w-full">
           <div className="pb-[40px] sm:pb-[0px] border-b-[1px] sm:border-r-[1px] sm:border-b-[0px] border-gray-300">
             <div className="flex justify-center">
-              <img src={light2} />
+              <img className="w-[38px] h-[38px]" src={light2} />
             </div>
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
               Settlements
@@ -643,8 +643,8 @@ const Dashboard = () => {
             </h4>
           </div>
           <div className="py-[40px] sm:py-[0px] border-b-[1px] xl:border-r-[1px] sm:border-b-[0px] border-gray-300">
-            <div className="flex justify-center">
-              <img src={link} />
+            <div className="flex justify-center ">
+              <img className="w-[38px] h-[38px]" src={link} />
             </div>
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
               Pay-ins
@@ -655,7 +655,7 @@ const Dashboard = () => {
           </div>
           <div className="py-[40px] sm:py-[0px] sm:border-r-[1px] border-b-[1px] xl:border-r-[1px] sm:border-b-[0px] border-gray-300">
             <div className="flex justify-center">
-              <img src={moneys} />
+              <img className="w-[38px] h-[38px]" src={moneys} />
             </div>
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
               Payout, API
@@ -666,7 +666,7 @@ const Dashboard = () => {
           </div>
           <div className="pt-[40px] sm:pt-[0px] ">
             <div className="flex justify-center">
-              <img src={driver} />
+              <img className="w-[38px] h-[38px]" src={driver} />
             </div>
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
               Balance, API
@@ -695,37 +695,37 @@ const Dashboard = () => {
         <div className="lg:grid lg:grid-cols-3 gap-y-[35px] mx-auto items-end">
           <div className="pt-[40px] lg:pt-[0px] ">
             <div className="flex justify-center">
-              <img className="-mr-[13px]" src={profile1} />
-              <img className="-mr-[13px]" src={profile2} />
-              <img className="-mr-[13px]" src={profile3} />
-              <img className="-mr-[13px]" src={profile4} />
+              <img className="-mr-[13px] w-[35px] h-[35px]" src={profile1} />
+              <img className="-mr-[13px] w-[35px] h-[35px]" src={profile2} />
+              <img className="-mr-[13px] w-[35px] h-[35px]" src={profile3} />
+              <img className="-mr-[13px] w-[35px] h-[35px]" src={profile4} />
             </div>
 
-            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px]">
+            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
               Repurpose analytics with the possibility to come
             </h4>
           </div>
 
           <div className="pt-[40px] lg:pt-[0px] ">
             <div className="flex justify-center">
-              <img className="mx-[2px]" src={star} />
-              <img className="mx-[2px]" src={star} />
-              <img className="mx-[2px]" src={star} />
-              <img className="mx-[2px]" src={star} />
-              <img className="mx-[2px]" src={star} />
+              <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
+              <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
+              <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
+              <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
+              <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
             </div>
 
-            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px]">
+            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
               5 out of 5 stars from 123 reviews from our users
             </h4>
           </div>
 
           <div className="pt-[40px] lg:pt-[0px] ">
             <div className="flex justify-center">
-              <img className="mx-[2px]" src={card} />
+              <img className="mx-[2px] w-[24px] h-[24px]" src={card} />
             </div>
 
-            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px]">
+            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
               Repurpose analytics with the possibility to come up.
             </h4>
           </div>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import mail from "../assets/mail.png";
 import office from "../assets/office.png";
@@ -7,6 +7,8 @@ import contactbg from "../assets/contactbg.png";
 
 const Contactus = () => {
   const form = useRef();
+
+  const [response, setResponse] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,6 +23,7 @@ const Contactus = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setResponse("Message sent successfully");
         },
         (error) => {
           console.log(error.text);
@@ -28,6 +31,10 @@ const Contactus = () => {
       );
     e.target.reset();
   };
+
+  setTimeout(() => {
+    setResponse(false);
+  }, 3000);
   return (
     <div>
       <div className="bg-blue-50 py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
@@ -61,7 +68,7 @@ const Contactus = () => {
       <div className="bg-white pb-[20px] md:py-[40px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px] md:grid md:grid-cols-3">
         <div className="py-[40px] md:py-[0px]  border-b-[1px] xl:border-r-[1px] sm:border-b-[0px] border-gray-300">
           <div className="flex justify-center">
-            <img src={mail} />
+            <img className="w-[52px] h-[52px]" src={mail} />
           </div>
           <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
             Email
@@ -76,7 +83,7 @@ const Contactus = () => {
 
         <div className="py-[40px] md:py-[0px]  border-b-[1px] xl:border-r-[1px] sm:border-b-[0px] border-gray-300">
           <div className="flex justify-center">
-            <img src={office} />
+            <img className="w-[52px] h-[52px]" src={office} />
           </div>
           <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
             Office
@@ -91,7 +98,7 @@ const Contactus = () => {
 
         <div className="py-[40px] md:py-[0px]  ">
           <div className="flex justify-center">
-            <img src={phone} />
+            <img className="w-[52px] h-[52px]" src={phone} />
           </div>
           <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
             Phone
@@ -174,6 +181,12 @@ const Contactus = () => {
                 You agree to our friendly privacy policy.
               </h4>
             </div>
+            {response && (
+              <h4 className="flex justify-center w-full bg-blue-50 mt-[32px] rounded-[5px] text-[16px] py-[10px]">
+                {response}
+              </h4>
+            )}
+
             <button
               type="submit"
               className="mt-[32px] flex justify-center w-full text-white bg-primary lg:text-[16px] text-[14px] py-[12px] rounded-[8px]"

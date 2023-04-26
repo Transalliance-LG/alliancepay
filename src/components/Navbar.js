@@ -19,7 +19,7 @@ const Navbar = ({ show, setShow }) => {
               Demo
             </h4>
             <div>
-              <img src={down} />
+              <img className="w-[10px]" src={down} />
             </div>
           </div>
           <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] px-[16px]">
@@ -44,12 +44,16 @@ const Navbar = ({ show, setShow }) => {
               Sign up{" "}
             </h4>
             <div>
-              <img src={next} />
+              <img className="w-[5px]" src={next} />
             </div>
           </button>
         </div>
         <div className="xl:hidden hover:cursor-pointer">
-          <img onClick={() => setShow(!show)} src={burger} />
+          <img
+            className="w-[25px]"
+            onClick={() => setShow(!show)}
+            src={burger}
+          />
         </div>
       </div>
 
@@ -63,7 +67,11 @@ const Navbar = ({ show, setShow }) => {
             <img src={logo} />
           </div>
           <div className="hover:cursor-pointer">
-            <img onClick={() => setShow(!show)} src={cancel} />
+            <img
+              className="w-[25px]"
+              onClick={() => setShow(!show)}
+              src={cancel}
+            />
           </div>
         </div>
         <div className="flex justify-center">
@@ -120,7 +128,7 @@ const Navbar = ({ show, setShow }) => {
                     Sign up{" "}
                   </h4>
                   <div>
-                    <img src={next} />
+                    <img className="w-[5px]" src={next} />
                   </div>
                 </button>
               </div>

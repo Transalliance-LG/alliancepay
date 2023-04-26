@@ -113,7 +113,11 @@ const Documentation = () => {
                     clickedIndex[i] ? "rotate-90" : "rotate-0"
                   } `}
                 >
-                  <img onClick={handleClick(i)} src={down2} />
+                  <img
+                    className="w-[10px]"
+                    onClick={handleClick(i)}
+                    src={down2}
+                  />
                 </div>
               </div>
               {clickedIndex[i] ? (
@@ -158,7 +162,7 @@ const Documentation = () => {
           </h1>
           <div className="flex justify-center">
             <button className=" flex text-primary bg-white items-center text-[12px] md:text-[16px] font-semibold mt-[43px] z-40 px-[18px] py-[12px] rounded-[30px] mx-[18px] md:px-[30px]">
-              <Link to="/contact_us">Contact Us</Link>
+              <Link to="/contactus">Contact Us</Link>
             </button>
           </div>
         </div>
