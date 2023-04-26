@@ -172,7 +172,7 @@ const Dashboard = () => {
           Join 4,000+ companies already growing
         </h4>
         <div className="slider flex whitespace-nowrap">
-          <div className=" slide-track ">
+          <div className=" slide-track items-center">
             <div className="slide">
               <img className="w-[160px]" src={layer2} />
             </div>
@@ -189,7 +189,7 @@ const Dashboard = () => {
               <img className="w-[160px]" src={quotient} />
             </div>
           </div>
-          <div className=" slide-track ">
+          <div className=" slide-track items-center">
             <div className="slide">
               <img className="w-[160px]" src={layer2} />
             </div>
