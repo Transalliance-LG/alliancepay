@@ -562,14 +562,14 @@ const Dashboard = () => {
               <div className="z-40 ">
                 <div className="z-40 relative  pt-[15px] pb-[7px] w-[270px] sm:w-auto">
                   <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold  lg:text-start -mt-[10px] z-40">
-                    Secured Payment
+                    Simplified &
                   </h4>
                   <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold -mt-[10px] text-primary z-40">
-                    Simplified
+                    Secured
                   </h4>
                   <div className="flex ">
                     <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold -mt-[10px] mr-[10px] z-40">
-                      The AlliancePay
+                      Payment Platform
                     </h4>
                   </div>
                   <h4 className="sm:text-[26px] text-[22px] xl:text-[40px] font-semibold  lg:text-start -mt-[10px] z-40">
@@ -681,7 +681,7 @@ const Dashboard = () => {
       <div className="bg-white py-[64px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <div>
           <h1 className="flex justify-center text-center text-[25px] lg:text-[32px] font-semibold">
-            What Our Customers Say
+            What Our Customers are Saying
           </h1>
           <div className="flex justify-center">
             <h4 className=" mt-[6px] lg:mt-[16px] text-[12px] md:text-[16px] mb-[40px] lg:mb-[60px] text-center lg:w-[800px] text-gray-600 ">
