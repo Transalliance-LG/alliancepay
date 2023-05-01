@@ -4,44 +4,74 @@ import next from "../assets/next.png";
 import down from "../assets/down.png";
 import burger from "../assets/burger.png";
 import cancel from "../assets/cancel.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = ({ show, setShow }) => {
   return (
     <div className="xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
       <div className=" bg-white lg:py-[16px] py-[20px] flex justify-between items-center ">
         <div>
-          <img src={logo} />
+          <NavLink to="#">
+            <img src={logo} />
+          </NavLink>
         </div>
         <div className="xl:flex hidden">
           <div className=" flex items-center px-[16px]">
             <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] ">
-              Demo
+              <NavLink
+                to="/"
+                style={({ isActive }) => {
+                  return { color: isActive ? "#2E3192" : "black" };
+                }}
+              >
+                Home
+              </NavLink>
             </h4>
             <div>
               <img className="w-[10px]" src={down} />
             </div>
           </div>
           <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] px-[16px]">
-            <Link to="/about">About Us</Link>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => {
+                return { color: isActive ? "#2E3192" : "black" };
+              }}
+            >
+              About us
+            </NavLink>
           </h4>
 
           <div className=" flex items-center px-[16px]">
             <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] ">
-              <Link to="/documentation">Documentation</Link>
+              <NavLink
+                to="/documentation"
+                style={({ isActive }) => {
+                  return { color: isActive ? "#2E3192" : "black" };
+                }}
+              >
+                Documentation
+              </NavLink>
             </h4>
           </div>
           <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] px-[16px]">
-            <Link to="/contactus">Contact Us</Link>
+            <NavLink
+              to="/contactus"
+              style={({ isActive }) => {
+                return { color: isActive ? "#2E3192" : "black" };
+              }}
+            >
+              Contact us
+            </NavLink>
           </h4>
         </div>
         <div className="xl:flex hidden items-center">
           <h4 className="mr-[44px] text-[12px] md:text-[16px] lg:text-[16px] font-medium">
-            Log in
+            <NavLink to="#">Log in</NavLink>
           </h4>
-          <button className="bg-primary flex items-center px-[24px] py-[11px] rounded-[30px]">
+          <button className="bg-primary hover:bg-blue-800 flex items-center px-[24px] py-[11px] rounded-[30px]">
             <h4 className="text-white text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[20px] ">
-              Sign up{" "}
+              <NavLink to="#">Sign up</NavLink>
             </h4>
             <div>
               <img className="w-[5px]" src={next} />
@@ -81,7 +111,14 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] hover:cursor-pointer flex justify-center"
               >
-                Demo
+                <NavLink
+                  to="/"
+                  style={({ isActive }) => {
+                    return { color: isActive ? "#2E3192" : "black" };
+                  }}
+                >
+                  Home
+                </NavLink>
               </h4>
             </div>
             <div className="h-[70px] min-h-fit">
@@ -89,7 +126,14 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] lg:px-[16px] flex justify-center hover:cursor-pointer"
               >
-                <Link to="/about">About Us</Link>
+                <NavLink
+                  to="/about"
+                  style={({ isActive }) => {
+                    return { color: isActive ? "#2E3192" : "black" };
+                  }}
+                >
+                  About us
+                </NavLink>
               </h4>
             </div>
 
@@ -98,7 +142,14 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] hover:cursor-pointer flex justify-center"
               >
-                <Link to="/documentation">Documentation</Link>
+                <NavLink
+                  to="/documentation"
+                  style={({ isActive }) => {
+                    return { color: isActive ? "#2E3192" : "black" };
+                  }}
+                >
+                  Documentation
+                </NavLink>
               </h4>
             </div>
             <div className="h-[70px] min-h-fit">
@@ -106,7 +157,14 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] lg:px-[16px] flex justify-center  hover:cursor-pointer"
               >
-                <Link to="/contactus">Contact Us</Link>
+                <NavLink
+                  to="/contactus"
+                  style={({ isActive }) => {
+                    return { color: isActive ? "#2E3192" : "black" };
+                  }}
+                >
+                  Contact us
+                </NavLink>
               </h4>
             </div>
             <div className="h-[70px] min-h-fit">
@@ -114,7 +172,7 @@ const Navbar = ({ show, setShow }) => {
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] lg:px-[16px] flex justify-center  hover:cursor-pointer"
               >
-                Log in
+                <NavLink to="#">Log in</NavLink>
               </h4>
             </div>
 
@@ -125,7 +183,7 @@ const Navbar = ({ show, setShow }) => {
                   className="bg-primary hover:bg-blue-800 justify-center flex items-center px-[24px] py-[11px] rounded-[30px]"
                 >
                   <h4 className="text-white text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[20px] ">
-                    Sign up{" "}
+                    <NavLink to="#">Sign up</NavLink>
                   </h4>
                   <div>
                     <img className="w-[5px]" src={next} />

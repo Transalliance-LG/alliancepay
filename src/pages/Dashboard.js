@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import background from "../assets/background.png";
 import crown from "../assets/crown.png";
@@ -125,17 +126,20 @@ const Dashboard = () => {
             upon it.
           </m.h4>
           <div className="flex lg:mt-[44px] mt-[17px] justify-center lg:justify-start">
-            <m.button
-              initial={{ opacity: 1, x: "-100%" }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 1,
-                x: { duration: 1 },
-              }}
-              className="rounded-[30px] bg-primary  text-white md:px-[18px] md:py-[12px] px-[12px] py-[8px] md:mr-[32px] mr-[15px]  text-[12px] sm:text-[16px]"
-            >
-              Get Started
-            </m.button>
+            <Link to="/">
+              <m.button
+                initial={{ opacity: 1, x: "-100%" }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                  duration: 1,
+                  x: { duration: 1 },
+                }}
+                className="rounded-[30px] bg-primary hover:bg-blue-800  text-white md:px-[18px] md:py-[12px] px-[12px] py-[8px] md:mr-[32px] mr-[15px]  text-[12px] sm:text-[16px]"
+              >
+                Get Started
+              </m.button>
+            </Link>
+
             <m.div
               initial={{ opacity: 1, x: "100%" }}
               animate={{ opacity: 1, x: 0 }}
@@ -247,12 +251,14 @@ const Dashboard = () => {
                   efficiently and effectively, allowing businesses to manage
                   transactions with ease.
                 </h4>
-                <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
-                  Start now
-                  <div className="w-[8px] md:w-[12px] ml-[10px]">
-                    <img src={arrow} />
-                  </div>
-                </button>
+                <Link to="/">
+                  <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                    Start now
+                    <div className="w-[8px] md:w-[12px] ml-[10px]">
+                      <img src={arrow} />
+                    </div>
+                  </button>
+                </Link>
               </div>
               <div className="flex justify-center">
                 <img src={accept} />
@@ -280,12 +286,14 @@ const Dashboard = () => {
               transactions with ease.
             </h4>
             <div className="flex justify-start">
-              <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
-                Start now
-                <div className="w-[8px] md:w-[12px] ml-[10px]">
-                  <img src={arrow} />
-                </div>
-              </button>
+              <Link to="/">
+                <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                  Start now
+                  <div className="w-[8px] md:w-[12px] ml-[10px]">
+                    <img src={arrow} />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -307,12 +315,14 @@ const Dashboard = () => {
               wallets.
             </h4>
             <div className="flex justify-start">
-              <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
-                Start now
-                <div className="w-[8px] md:w-[12px] ml-[10px]">
-                  <img src={arrow} />
-                </div>
-              </button>
+              <Link to="/">
+                <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                  Start now
+                  <div className="w-[8px] md:w-[12px] ml-[10px]">
+                    <img src={arrow} />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -333,12 +343,14 @@ const Dashboard = () => {
               reconciliations with a robust data Dashboard and easy exports.
             </h4>
             <div className="flex justify-start">
-              <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
-                Start now
-                <div className="w-[8px] md:w-[12px] ml-[10px]">
-                  <img src={arrow} />
-                </div>
-              </button>
+              <Link to="/">
+                <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                  Start now
+                  <div className="w-[8px] md:w-[12px] ml-[10px]">
+                    <img src={arrow} />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -361,12 +373,14 @@ const Dashboard = () => {
               and confirm status of transaction, resolve disputes etc.
             </h4>
             <div className="flex justify-start">
-              <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
-                Start now
-                <div className="w-[8px] md:w-[12px] ml-[10px]">
-                  <img src={arrow} />
-                </div>
-              </button>
+              <Link to="/">
+                <button className="bg-white flex  text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                  Start now
+                  <div className="w-[8px] md:w-[12px] ml-[10px]">
+                    <img src={arrow} />
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -388,12 +402,14 @@ const Dashboard = () => {
                   profile and confirm status of transaction, resolve disputes
                   etc.
                 </h4>
-                <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
-                  Start now
-                  <div className="w-[8px] md:w-[12px] ml-[10px]">
-                    <img src={arrow} />
-                  </div>
-                </button>
+                <Link to="/">
+                  <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
+                    Start now
+                    <div className="w-[8px] md:w-[12px] ml-[10px]">
+                      <img src={arrow} />
+                    </div>
+                  </button>
+                </Link>
               </div>
               <div className="flex justify-center">
                 <img src={get} />
@@ -530,7 +546,7 @@ const Dashboard = () => {
                     Build custom payments experiences with well-documented APIs
                   </h4>
 
-                  <button className=" flex text-white bg-primary items-center text-[12px] md:text-[16px] font-semibold mt-[43px] z-40 px-[18px] py-[12px] rounded-[30px] mx-[18px] md:px-[30px]">
+                  <button className=" flex text-white bg-primary hover:bg-blue-800 items-center text-[12px] md:text-[16px] font-semibold mt-[43px] z-40 px-[18px] py-[12px] rounded-[30px] mx-[18px] md:px-[30px]">
                     Explore the Docs
                     <div className="w-[8px] md:w-[12px] ml-[10px] ">
                       <img src={arrow02} />
@@ -556,7 +572,7 @@ const Dashboard = () => {
       </div>
 
       <div className="bg-white pt-[64px] md:pb-[40px]  xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
-        <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:grid-flow-col md:gap-x-[25px]  lg:gap-x-[40px] items-center">
+        <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:grid-flow-col md:gap-x-[25px]  lg:gap-x-[90px] xl:gap-x-[200px] items-center">
           <div className="md:col-start-1 md:col-end-2 z-40">
             <div className="flex justify-center">
               <div className="z-40 ">
@@ -577,7 +593,7 @@ const Dashboard = () => {
                   </h4>
                 </div>
 
-                <h4 className="mt-[10px] text-[12px] md:text-[16px]  z-40  mb-[24px] md:mt-[0px]">
+                <h4 className="mt-[10px] text-[12px] md:text-[16px]  z-40  mb-[24px] md:mt-[0px] font-medium">
                   To ensure a secure and seamless payment experience for our
                   customers, we have developed a payment infrastructure with
                   security at its core. Our advanced system is equipped with a
@@ -590,18 +606,18 @@ const Dashboard = () => {
           <div className=" md:col-start-2 md:col-end-3 z-40 flex justify-center">
             <img src={background5} />
           </div>
-          <h4 className="  md:col-start-1 md:col-end-2 z-40  font-light">
-            <div className="xl:grid md:grid-cols-3 xl:items-center">
-              <h4 className="text-[10px] md:text-[16px] col-start-1 col-end-3 mt-[24px] md:mt-[0px]">
-                We take security and compliance seriously. That's why we invest
-                in resources that keep us compliant with regulatory standards,
-                keeping you and your money safe from bad actors.
-              </h4>
-              <div className=" col-start-3 col-end-4 ">
-                <img className="mx-auto w-[119px]" src={pci} />
-              </div>
+        </div>
+        <div className=" z-40  font-light">
+          <div className="xl:grid md:grid-cols-2 xl:items-center md:gap-x-[25px]  lg:gap-x-[90px] xl:gap-x-[200px] md:mt-[30px]">
+            <h4 className="text-[8px] md:text-[14px] col-start-1 col-end-2 mt-[24px] md:mt-[0px]">
+              We take security and compliance seriously. That's why we invest in
+              resources that keep us compliant with regulatory standards,
+              keeping you and your money safe from bad actors.
+            </h4>
+            <div className=" col-start-2 col-end-3 ">
+              <img className="mx-auto w-[119px]" src={pci} />
             </div>
-          </h4>
+          </div>
         </div>
       </div>
 
@@ -685,9 +701,8 @@ const Dashboard = () => {
           </h1>
           <div className="flex justify-center">
             <h4 className=" mt-[6px] lg:mt-[16px] text-[12px] md:text-[16px] mb-[40px] lg:mb-[60px] text-center lg:w-[800px] text-gray-600 ">
-              Organically grow the holistic world view of disruptive innovation
-              via workplace diversity and empowerment. Bring to the table
-              win-win strategies to ensure domination.
+              Read below from our trusted client. See how they share their
+              experience using our service
             </h4>
           </div>
         </div>

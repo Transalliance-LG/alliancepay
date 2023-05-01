@@ -14,24 +14,40 @@ const Documentation = () => {
 
   const Dropdown = [
     {
-      title: "Introduction",
+      title: "What is AlliancePay?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "AlliancePay is a payment gateway that enables businesses to accept payments from customers through various payment channels, including debit/credit cards, bank transfers, and mobile wallets.",
     },
     {
-      title: "Installation",
+      title: "What are connect platforms?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "Connect platforms are platforms that facilitate payments between two or more parties, such as marketplaces, crowdfunding platforms, or peer-to-peer lending platforms.",
     },
     {
-      title: "Get started",
+      title: "How do I install AlliancePay on my connect platform?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "You can integrate AlliancePay with your connect platform by using our APIs and SDKs. We offer APIs for various programming languages, including PHP, Java, and Python, as well as SDKs for mobile platforms such as iOS and Android. Please refer to our developer documentation for more information on how to integrate AlliancePay with your connect platform.",
     },
     {
-      title: "Server settings",
+      title: "How do I get started with AlliancePay integration?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "To get started with AlliancePay integration, you need to create an account with us and obtain your API keys. Once you have your API keys, you can start integrating AlliancePay with your connect platform using our APIs and SDKs. Please refer to our developer documentation for detailed instructions on how to integrate AlliancePay with your connect platform.",
+    },
+    {
+      title: "What payment channels does AlliancePay support?",
+      content:
+        "AlliancePay supports various payment channels, including debit/credit cards, bank transfers, and mobile wallets such as Paystack, Flutterwave, and Paga.",
+    },
+    {
+      title:
+        "What server settings do I need to configure for AlliancePay integration?",
+      content:
+        "To integrate AlliancePay with your connect platform, you may need to configure your server settings to enable HTTPS communication, as well as set up webhooks for receiving notifications about payment events. Please refer to our developer documentation for detailed instructions on how to configure your server settings for AlliancePay integration.",
+    },
+    {
+      title: "How do I test my AlliancePay integration?",
+      content:
+        "You can test your AlliancePay integration by using our sandbox environment, which simulates the behavior of our production environment without actual financial transactions. You can use our test API keys and test card numbers to test your integration. Please refer to our developer documentation for more information on how to test your AlliancePay integration.",
     },
   ];
 
@@ -71,18 +87,18 @@ const Documentation = () => {
 
       <div className="bg-white  xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px] sm:grid sm:grid-cols-3 flex justify-center">
         <div className="flex justify-center px-[10px] sm:px-[0px]">
-          <button className=" flex justify-center text-white bg-primary items-center text-[12px] md:text-[16px] font-semibold md:mt-[20px] z-40  rounded-[30px]  md:px-[30px] md:py-[16] px-[6px] py-[4px]">
+          <button className=" flex justify-center text-white hover:bg-blue-800 bg-primary items-center text-[12px] md:text-[16px] font-semibold md:mt-[20px] z-40  rounded-[30px]  md:px-[30px] md:py-[16] px-[6px] py-[4px]">
             Connect Platforms
           </button>
         </div>
 
         <div className="flex justify-center px-[10px] sm:px-[0px]">
-          <button className=" flex justify-center text-primary bg-white items-center text-[12px] md:text-[16px] font-semibold md:mt-[20px] z-40  rounded-[30px]    border-[1px] border-primary md:px-[30px] md:py-[16] px-[6px] py-[4px]">
+          <button className=" flex justify-center text-primary hover:bg-blue-100  bg-white items-center text-[12px] md:text-[16px] font-semibold md:mt-[20px] z-40  rounded-[30px]    border-[1px] border-primary md:px-[30px] md:py-[16] px-[6px] py-[4px]">
             Web Hooks
           </button>
         </div>
         <div className="flex justify-center px-[10px] sm:px-[0px]">
-          <button className=" flex justify-center text-primary bg-white items-center text-[12px] md:text-[16px] font-semibold md:mt-[20px] z-40  rounded-[30px]    border-[1px] border-primary md:px-[30px] md:py-[16] px-[6px] py-[4px]">
+          <button className=" flex justify-center text-primary hover:bg-blue-100 bg-white items-center text-[12px] md:text-[16px] font-semibold md:mt-[20px] z-40  rounded-[30px]    border-[1px] border-primary md:px-[30px] md:py-[16] px-[6px] py-[4px]">
             API Libraries
           </button>
         </div>
@@ -161,7 +177,7 @@ const Documentation = () => {
             Request a Feature or Open a Ticket
           </h1>
           <div className="flex justify-center">
-            <button className=" flex text-primary bg-white items-center text-[12px] md:text-[16px] font-semibold mt-[43px] z-40 px-[18px] py-[12px] rounded-[30px] mx-[18px] md:px-[30px]">
+            <button className=" flex text-primary bg-white hover:bg-blue-100 items-center text-[12px] md:text-[16px] font-semibold mt-[43px] z-40 px-[18px] py-[12px] rounded-[30px] mx-[18px] md:px-[30px]">
               <Link to="/contactus">Contact Us</Link>
             </button>
           </div>

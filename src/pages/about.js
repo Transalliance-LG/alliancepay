@@ -20,32 +20,31 @@ const About = () => {
     {
       title: "Do I get any discounts?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "AlliancePay is a payment gateway and as such does not give discounts. However, we are certain that our charges to our merchants (customers) would be as competitive as possible.",
     },
     {
       title: "Who bears the cost of a transaction?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "For every successive transaction, there are different stakeholders, each of which has its own charge. AlliancePay automatically and seamlessly deduct these charges per transaction.",
     },
     {
       title: "Does Alliancepay offer chargeback levels?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "AlliancePay has been programmed not to allow a chargeback ratio of more than 0.1%.",
     },
     {
       title: "How does a discount work?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "Even though we do not offer discounts, our processes are all automated. Once a merchants has been onboarded, transactions are processed automatically (based on charges stated).",
     },
     {
       title: "Do I get to meet the Alliancepay team?",
       content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+        "We are open to receiving any of our existing or prospective customers. You can find our address at the “contact us” page or book an appointment via a phone call.",
     },
     {
       title: "Where is Alliancepay office located?",
-      content:
-        "A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales.",
+      content: "We are located at 200c Muri Okunola Street VI Lagos.",
     },
   ];
 
@@ -353,17 +352,19 @@ const About = () => {
             </div> */}
           </div>
         </div>
-        <div className="mt-[64px] py-[32px]">
-          <h4 className="flex justify-center md:text-[20px] text-[18px] font-mrdium mb-[18px]">
-            Still have questions?
-          </h4>
-          <h4 className="flex justify-center md:text-[18px] text-[16px] font-normal mb-[32px]">
-            Can’t find the answer you’re looking for? Please chat to our
-            friendly team.
-          </h4>
-          <button className="flex justify-center mx-auto md:text-[16px] text-[14px] font-semibold bg-primary text-white py-[8px] px-[16px] md:py-[10px] md:px-[18px] rounded-[8px]">
-            Get in touch
-          </button>
+        <div className="mt-[64px] py-[32px] hidden md:flex justify-center">
+          <div>
+            <h4 className="flex justify-center md:text-[20px] text-[18px] font-mrdium mb-[18px]">
+              Still have questions?
+            </h4>
+            <h4 className="flex justify-center md:text-[18px] text-[16px] font-normal mb-[32px]">
+              Can’t find the answer you’re looking for? Please chat to our
+              friendly team.
+            </h4>
+            <button className="flex justify-center mx-auto md:text-[16px] text-[14px] font-semibold bg-primary hover:bg-blue-800 text-white py-[8px] px-[16px] md:py-[10px] md:px-[18px] rounded-[8px]">
+              Get in touch
+            </button>
+          </div>
         </div>
       </div>
 
@@ -371,12 +372,12 @@ const About = () => {
         <h4 className="lg:text-[32px] font-semibold text-[20px] text-white flex justify-center text-center w-auto mx-auto md:w-[400px] lg:w-[700px]">
           Welcome to your new digital reality that which will rock your world.
         </h4>
-        <div className="flex justify-center mt-[32px]">
-          <button className="flex justify-center md:text-[16px] text-[14px] font-semibold bg-white text-primary  rounded-[8px]  px-[18px] py-[12px]">
+        <div className="md:flex md:w-auto justify-center mt-[32px]">
+          <button className="w-full md:w-auto flex justify-center md:text-[16px] text-[14px] font-semibold bg-white text-primary  rounded-[8px]  px-[18px] py-[12px]">
             Sign up
           </button>
-          <button className="flex justify-center md:text-[16px] text-[14px] font-semibold bg-primary text-white px-[18px] py-[12px] rounded-[8px]  ">
-            Login in
+          <button className=" w-full md:w-auto flex justify-center md:text-[16px] text-[14px] font-semibold bg-blue-800 md:mt-[0px] mt-[16px] md:bg-primary text-white px-[18px] py-[12px] rounded-[8px]  ">
+            Log in
           </button>
         </div>
       </div>
