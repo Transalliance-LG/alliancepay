@@ -173,7 +173,7 @@ const Dashboard = () => {
 
       <div className="xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px] py-[40px]">
         <h4 className="mb-[32px] flex justify-center">
-          Join 4,000+ companies already growing
+          Join the list of companies
         </h4>
         <div className="slider flex whitespace-nowrap">
           <div className=" slide-track items-center">
@@ -608,7 +608,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className=" z-40  font-light">
-          <div className="xl:grid md:grid-cols-2 xl:items-center md:gap-x-[25px]  lg:gap-x-[90px] xl:gap-x-[200px] md:mt-[30px]">
+          <div className="md:grid md:grid-cols-2 xl:items-center ms:gap-x-[25px]  lg:gap-x-[90px] xl:gap-x-[200px] md:mt-[30px]">
             <h4 className="text-[8px] md:text-[14px] col-start-1 col-end-2 mt-[24px] md:mt-[0px]">
               We take security and compliance seriously. That's why we invest in
               resources that keep us compliant with regulatory standards,
@@ -707,7 +707,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-3 gap-y-[35px] mx-auto items-end">
+        <div className="lg:grid lg:grid-cols-3 gap-y-[35px] mx-auto  items-start">
           <div className="pt-[40px] lg:pt-[0px] ">
             <div className="flex justify-center">
               <img className="-mr-[13px] w-[35px] h-[35px]" src={profile1} />
@@ -717,7 +717,11 @@ const Dashboard = () => {
             </div>
 
             <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
-              Repurpose analytics with the possibility to come
+              AlliancePay is the best payment gateway I have used for my online
+              business. Their platform is easy to use, supports multiple payment
+              channels, and is highly secure and reliable. Their customer
+              support is also top-notch. I highly recommend AlliancePay to any
+              business looking for a trustworthy payment solution.
             </h4>
           </div>
 
@@ -741,7 +745,9 @@ const Dashboard = () => {
             </div>
 
             <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
-              Repurpose analytics with the possibility to come up.
+              Their platform is intuitive, efficient, and supports various
+              payment channels that cater to my customers' needs. What impressed
+              me the most was the speed and ease of integration
             </h4>
           </div>
         </div>

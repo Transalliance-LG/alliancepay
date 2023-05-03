@@ -129,7 +129,7 @@ const About = () => {
             <ol>
               <li className="font-semibold">
                 <div className="mb-[35px] ">
-                  <h4 className=" mt-[6px] lg:mt-[19px]  md:text-[16px] mb-[16px]   text-black mb-[4px] ">
+                  <h4 className=" mt-[6px] lg:mt-[19px]  md:text-[16px] mb-[16px]   text-black  ">
                     Our Coverage
                   </h4>
                   <h4 className=" mt-[6px] lg:mt-[19px] text-[12px] md:text-[16px] mb-[16px] lg:mb-[16px] font-normal  text-black ">
@@ -193,9 +193,9 @@ const About = () => {
           </h1>
           <div className="flex justify-center">
             <h4 className=" mt-[6px] lg:mt-[16px] text-center text-[12px] md:text-[16px] text-gray-600 ">
-              Organically grow the holistic world view of disruptive innovation
-              via workplace diversity and empowerment of people and great talent
-              that truly rocks.
+              Here are our core team executives having a wealth of experience
+              and expertise in the payments industry, and are committed to
+              delivering the best possible service to our customers.
             </h4>
           </div>
         </div>
