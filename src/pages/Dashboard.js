@@ -74,7 +74,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className={show ? "fixed" : ""}>
+    <div>
       <div className="bg-blue-50 py-[58px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px] lg:grid grid-cols-2 items-center">
         <m.div
           initial={{ opacity: 1, y: "-100%" }}
