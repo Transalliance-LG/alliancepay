@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
 
   return (
     <Router>
@@ -23,7 +24,7 @@ function App() {
             <Route exact path="/:page" element={<PageRender />} />
           </Routes>
 
-          <Footer />
+          <Footer show2={show2} setShow2={setShow2} />
         </div>
       </div>
     </Router>
