@@ -157,7 +157,7 @@ const Footer = ({ show2, setShow2 }) => {
             onClick={() => setShow2(!show2)}
             className="rounded-[10px] bg-primary hover:bg-blue-800  text-white md:px-[18px] md:py-[10px] px-[10px] py-[8px] text-[12px] md:text-[16px] sm:text-[16px]"
           >
-            Privacy policy
+            IMS policy
           </button>
         </div>
       </div>
