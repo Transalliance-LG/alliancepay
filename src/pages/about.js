@@ -56,18 +56,20 @@ const About = () => {
       <div className="bg-blue-50 py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <div>
           <h1 className="flex justify-center text-center text-[25px] lg:text-[32px] font-semibold">
-            About Alliancepay
+            Simple solutions for smart businesses
           </h1>
           <div className="flex justify-center">
             <h4 className=" mt-[6px] lg:mt-[16px] text-[12px] md:text-[16px]  text-center lg:w-[350px] text-gray-600 ">
-              Alliancepay is your trusted partner for secure and convenient
-              payment solutions.
+              AlliancePay is a technology company built specifically to help
+              ambitious businesses simplify complex payment problems. Our
+              mission is to deliver very secure payment solutions to businesses
+              across the globe.
             </h4>
           </div>
         </div>
       </div>
 
-      <div className="bg-white pt-[32px] md:pt-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
+      {/* <div className="bg-white pt-[32px] md:pt-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <div>
           <h1 className="flex justify-center text-center text-[25px] lg:text-[32px] font-semibold">
             Simple solutions for smart businesses
@@ -81,7 +83,7 @@ const About = () => {
             </h4>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-white py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <div className="mb-[24px]">
