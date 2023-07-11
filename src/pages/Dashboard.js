@@ -121,9 +121,10 @@ const Dashboard = () => {
             }}
             className="mt-[24px] text-[12px] md:text-[16px] text-center lg:text-start"
           >
-            We’ve been told it is not possible to overachieve our customers’
+            {/* We’ve been told it is not possible to overachieve our customers’
             expectations. We have not reinvented the wheel, we decided to build
-            upon it.
+            upon it. */}
+            Alliancepay simplifies payments one merchant at a time.
           </m.h4>
           <div className="flex lg:mt-[44px] mt-[17px] justify-center lg:justify-start">
             <Link to="/">
@@ -158,7 +159,7 @@ const Dashboard = () => {
                 rel="noopener noreferrer"
               >
                 <h4 className="font-semibold text-[12px] sm:text-[14px] text-center w-[120px] sm:w-auto">
-                  new users with contact sales
+                  Contact Sales
                 </h4>
               </a>
             </m.div>
