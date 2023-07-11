@@ -216,18 +216,18 @@ const Footer = ({ show2, setShow2 }) => {
           <h1 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[24px] font-semibold">
             Why Choose Us?
           </h1>
-          {/* <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Channels
+          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+            Receive payments.
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Scale
+            Multiple Payment Options.
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Watch the Demo
+            Detailed Reporting
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Our Competition
-          </h4> */}
+            PCI DSS
+          </h4>
         </div>
       </div>
 
