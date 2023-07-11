@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import abouticon from "../assets/abouticon.png";
 import background02 from "../assets/background02.png";
 import down2 from "../assets/down2.png";
-import ceo from "../assets/ceo.png";
-import md from "../assets/md.png";
-import cfo from "../assets/cfo.png";
+import ceo from "../assets/ceo.jpg";
+import md from "../assets/md.jpeg";
+import clo from "../assets/clo.jpeg";
+import coo from "../assets/coo.jpg";
+import cfo from "../assets/cfo.jpg";
+import cpo from "../assets/cpo.jpeg";
 
 const About = () => {
   const [clickedIndex, setClickedIndex] = useState({});
@@ -59,6 +62,22 @@ const About = () => {
             <h4 className=" mt-[6px] lg:mt-[16px] text-[12px] md:text-[16px]  text-center lg:w-[350px] text-gray-600 ">
               Alliancepay is your trusted partner for secure and convenient
               payment solutions.
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white pt-[32px] md:pt-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
+        <div>
+          <h1 className="flex justify-center text-center text-[25px] lg:text-[32px] font-semibold">
+            Simple solutions for smart businesses
+          </h1>
+          <div className="flex justify-center">
+            <h4 className=" mt-[6px] lg:mt-[16px] text-[12px] md:text-[16px]  text-center lg:w-2/3 text-gray-600 ">
+              AlliancePay is a technology company built specifically to help
+              ambitious businesses simplify complex payment problems. Our
+              mission is to deliver very secure payment solutions to businesses
+              across the globe.
             </h4>
           </div>
         </div>
@@ -209,7 +228,7 @@ const About = () => {
                 Kamsi Okafor
               </h4>
               <h4 className=" font-normal md:text-[16px] text-[14px] ">
-                C.E.O
+                Chairman
               </h4>
             </div>
           </div>
@@ -220,9 +239,91 @@ const About = () => {
                 <img className="w-[384px]" src={md} />
               </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
-                Afam Obodozie
+                Obodozie Afam
               </h4>
-              <h4 className=" font-normal md:text-[16px] text-[14px] ">M.D</h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">CEO</h4>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-[32px] lg:mt-[0px]">
+            <div>
+              {/* <div>
+                <img className="w-[384px]" src={} />
+              </div> */}
+              <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
+                Tim Adedoyin
+              </h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">CTO</h4>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-[32px] lg:mt-[0px]">
+            <div>
+              {/* <div>
+                <img className="w-[384px]" src={} />
+              </div> */}
+              <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
+                Temitope Oyesanya
+              </h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">
+                Settlement
+              </h4>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-[32px] lg:mt-[0px]">
+            <div>
+              {/* <div>
+                <img className="w-[384px]" src={} />
+              </div> */}
+              <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
+                Gift Ogbonna
+              </h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">
+                Business
+              </h4>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-[32px] lg:mt-[0px]">
+            <div>
+              <div>
+                <img className="w-[384px]" src={clo} />
+              </div>
+              <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
+                Lovelyn Mark
+              </h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">
+                Chief Legal Officer
+              </h4>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-[32px] lg:mt-[0px]">
+            <div>
+              {/* <div>
+                <img className="w-[384px]" src={} />
+              </div> */}
+              <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
+                Olufemi Ojo-Omoniyi
+              </h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">
+                Chief Risk & Compliance Officer
+              </h4>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-[32px] lg:mt-[0px]">
+            <div>
+              <div>
+                <img className="w-[384px]" src={coo} />
+              </div>
+              <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
+                Anthony Nwosu
+              </h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">
+                Chief Operations Officer
+              </h4>
             </div>
           </div>
 
@@ -235,14 +336,28 @@ const About = () => {
                 Femi Adedipe
               </h4>
               <h4 className=" font-normal md:text-[16px] text-[14px] ">
-                C.F.O
+                Chief Financial Officer
+              </h4>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-[32px] lg:mt-[0px]">
+            <div>
+              <div>
+                <img className="w-[384px]" src={cpo} />
+              </div>
+              <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
+                Nneka Ngene
+              </h4>
+              <h4 className=" font-normal md:text-[16px] text-[14px] ">
+                Chief People Officer
               </h4>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-white py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
+      {/* <div className="bg-white py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <div className="mb-[24px]">
           <h1 className="flex justify-center text-center text-[20px] lg:text-[25px] font-semibold">
             Frequently asked questions
@@ -302,54 +417,7 @@ const About = () => {
               </div>
             ))}
 
-            {/* <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
-              <h4 className="text-[12px] md:text-[16px] lg:text-[16px] font-medium">
-                Do I get any discounts?
-              </h4>
-              <div>
-                <img src={down2} />
-              </div>
-            </div>
-            <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
-              <h4 className="text-[12px] md:text-[16px] lg:text-[16px] font-medium">
-                Who bears the cost of a transaction?
-              </h4>
-              <div>
-                <img src={down2} />
-              </div>
-            </div>
-            <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
-              <h4 className="text-[12px] md:text-[16px] lg:text-[16px] font-medium">
-                Does Alliancepay offer chargeback levels?
-              </h4>
-              <div>
-                <img src={down2} />
-              </div>
-            </div>
-            <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
-              <h4 className="text-[12px] md:text-[16px] lg:text-[16px] font-medium">
-                How does a discount work?
-              </h4>
-              <div>
-                <img src={down2} />
-              </div>
-            </div>
-            <div className="py-[28px] px-[32px] flex justify-between items-center border-b-[1px] border-gray-300">
-              <h4 className="text-[12px] md:text-[16px] lg:text-[16px] font-medium">
-                Do I get to meet the Alliancepay team?
-              </h4>
-              <div>
-                <img src={down2} />
-              </div>
-            </div>
-            <div className="py-[28px] px-[32px] flex justify-between items-center ">
-              <h4 className="text-[12px] md:text-[16px] lg:text-[16px] font-medium">
-                Where is Alliancepay office located?
-              </h4>
-              <div>
-                <img src={down2} />
-              </div>
-            </div> */}
+          
           </div>
         </div>
         <div className="mt-[64px] py-[32px] hidden md:flex justify-center">
@@ -366,7 +434,7 @@ const About = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-primary py-[32px] md:py-[80px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <h4 className="lg:text-[32px] font-semibold text-[20px] text-white flex justify-center text-center w-auto mx-auto md:w-[400px] lg:w-[700px]">

@@ -152,9 +152,15 @@ const Dashboard = () => {
               <div className="bg-blue-300 flex items-center md:w-[32px] md:h-[32px] w-[25px] h-[25px] justify-center rounded-full mr-[16px]">
                 <img className="w-[20px] h-[20px]" src={light} />
               </div>
-              <h4 className="font-semibold text-[12px] sm:text-[14px] text-center w-[120px] sm:w-auto">
-                5% Cashback For New users
-              </h4>
+              <a
+                href="mailto:info@alliancepay.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4 className="font-semibold text-[12px] sm:text-[14px] text-center w-[120px] sm:w-auto">
+                  new users with contact sales
+                </h4>
+              </a>
             </m.div>
           </div>
         </div>
@@ -214,7 +220,7 @@ const Dashboard = () => {
       </div>
 
       <div className="bg-blue-50 py-[64px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-[64px]">
           <div className="flex justify-center items-center px-[16px] py-[8px] bg-white rounded-[60px] ">
             <div className="bg-blue-300 flex items-center md:w-[32px] md:h-[32px] w-[25px] h-[25px] justify-center rounded-full mr-[12px]">
               <img className="w-[20px] h-[20px]" src={light} />
@@ -224,13 +230,13 @@ const Dashboard = () => {
             </h1>
           </div>
         </div>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <h4 className="mt-[12px] text-[12px] md:text-[16px] mb-[64px] text-center lg:w-[800px] ">
             Keeping your eye on the ball while performing a deep dive on the
             start-up mentality to derive convergence on cross-platform
             integration.
           </h4>
-        </div>
+        </div> */}
 
         <div className="sm:grid sm:grid-cols-2 2xl:grid-cols-3 gap-[14px] xl:gap-[25px]">
           <div className="hidden sm:block bg-white lg:px-[32px] px-[13px] lg:py-[35px] py-[15px] lg:rounded-[50px] rounded-[22px] 2xl:col-start-1 2xl:col-end-3 col-start-1 col-end-3">
@@ -246,10 +252,11 @@ const Dashboard = () => {
               <div className="">
                 <h4 className="mt-[30px] text-[12px] md:text-[16px]">
                   AlliancePay provides businesses with an easy-to-use payment
-                  processing solution that integrates seamlessly with popular
-                  e-commerce platforms. The payment gateway is designed to work
-                  efficiently and effectively, allowing businesses to manage
-                  transactions with ease.
+                  processing solution; with an API system that integrates
+                  seamlessly with literally any online platform. A
+                  state-of-the-art infrastructure that enables merchants,
+                  irrespective of where they are, to effectively manage their
+                  businesses on the go!
                 </h4>
                 <Link to="/">
                   <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold mt-[28px]">
@@ -280,10 +287,10 @@ const Dashboard = () => {
             </div>
             <h4 className="mt-[8px] text-[12px] md:text-[16px]">
               AlliancePay provides businesses with an easy-to-use payment
-              processing solution that integrates seamlessly with popular
-              e-commerce platforms. The payment gateway is designed to work
-              efficiently and effectively, allowing businesses to manage
-              transactions with ease.
+              processing solution; with an API system that integrates seamlessly
+              with literally any online platform. A state-of-the-art
+              infrastructure that enables merchants, irrespective of where they
+              are, to effectively manage their businesses on the go!
             </h4>
             <div className="flex justify-start">
               <Link to="/">
@@ -303,16 +310,19 @@ const Dashboard = () => {
                 <img src={icon2} />
               </div>
               <h1 className="text-[14px] 2xl:text-[22px] lg:text-[24px] font-semibold">
-                Make payments
+                Multiple Payment Options
               </h1>
             </div>
             <div className="flex justify-center mt-[15px] h-[62px] w-[62px] md:w-auto md:h-auto mx-auto">
               <img src={make} />
             </div>
             <h4 className="mt-[8px] text-[12px] md:text-[16px]">
-              AlliancePay offers businesses flexible payout options that enable
-              them to deliver value directly to local bank accounts and mobile
-              wallets.
+              AlliancePay offers businesses multiple payment options to make
+              payments from customers an extremely easy process! The QR code,
+              Bank transfers, Card, Payment Links, USSD, Direct Debit etc are a
+              few readily available options for customers to pay from. The
+              integrations to ensure that each option functions optimally have
+              been seamless and simple!
             </h4>
             <div className="flex justify-start">
               <Link to="/">
@@ -339,8 +349,11 @@ const Dashboard = () => {
               <img src={detailed} />
             </div>
             <h4 className="mt-[8px] text-[12px] md:text-[16px]">
-              Understand your customers’ purchase patterns and do easy
-              reconciliations with a robust data Dashboard and easy exports.
+              Easy reconciliation of complex data with a click of a button!
+              AlliancePay affords you the ability to simplify and export very
+              complex data from various transactions and payment patterns of
+              multiple customers. The unified data provides very insightful
+              reports that will come in very handy to every merchant onboarded!
             </h4>
             <div className="flex justify-start">
               <Link to="/">
@@ -433,7 +446,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:grid-flow-col md:gap-[50px]  xl:gap-[70px] items-center">
+        {/* <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:grid-flow-col md:gap-[50px]  xl:gap-[70px] items-center">
           <div className="md:col-start-2 md:col-end-3">
             <img src={background02} />
           </div>
@@ -495,6 +508,55 @@ const Dashboard = () => {
                 We allows businesses to customize their payment pages to match
                 their branding. This creates a consistent and professional user
                 experience for customers.
+              </h4>
+              <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold ">
+                Start now
+                <div className="w-[8px] md:w-[12px] ml-[10px]">
+                  <img src={arrow} />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:grid-flow-col md:gap-[50px]  xl:gap-[70px] items-center">
+          <div className="md:col-start-2 md:col-end-3">
+            <img src={background02} />
+          </div>
+          <div className="md:col-start-1 md:col-end-2 mt-[35px] md:mt-[0px]">
+            <div className="mb-[35px]">
+              <div className="flex items-center">
+                {/* <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
+                  <img src={icon5} />
+                </div> */}
+                <h1 className="text-[14px] 2xl:text-[22px] lg:text-[24px] font-semibold">
+                  Our mission
+                </h1>
+              </div>
+              <h4 className=" mt-[6px] lg:mt-[19px] text-[12px] md:text-[16px] mb-[16px] lg:mb-[16px]  text-gray-600 ">
+                To provide secure payment solution to businesses across the
+                globe.
+              </h4>
+              <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold ">
+                Start now
+                <div className="w-[8px] md:w-[12px] ml-[10px]">
+                  <img src={arrow} />
+                </div>
+              </button>
+            </div>
+
+            <div className="mb-[35px]">
+              <div className="flex items-center">
+                {/* <div className="mr-[8px] w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]">
+                  <img src={icon6} />
+                </div> */}
+                <h1 className="text-[14px] 2xl:text-[22px] lg:text-[24px] font-semibold">
+                  Our vision
+                </h1>
+              </div>
+              <h4 className=" mt-[6px] lg:mt-[19px] text-[12px] md:text-[16px] mb-[16px] lg:mb-[16px] text-gray-600 ">
+                To create a world where payments become so seamless it is almost
+                invincible!
               </h4>
               <button className="bg-white flex text-primary items-center text-[12px] md:text-[16px] font-semibold ">
                 Start now
@@ -599,6 +661,11 @@ const Dashboard = () => {
                   security at its core. Our advanced system is equipped with a
                   real-time AML transaction monitoring system that safeguards
                   all transactions in real-time.
+                  <br></br>
+                  We are PCI-DSS Compliant which signifies that AlliancePay has
+                  satisfied the highest measures of Security Audit. Your
+                  customers and partners can be rest assured that transactions
+                  on our platform are safe and secure.
                 </h4>
               </div>
             </div>
@@ -609,11 +676,11 @@ const Dashboard = () => {
         </div>
         <div className=" z-40  font-light">
           <div className="md:grid md:grid-cols-2 xl:items-center ms:gap-x-[25px]  lg:gap-x-[90px] xl:gap-x-[200px] md:mt-[30px]">
-            <h4 className="text-[8px] md:text-[14px] col-start-1 col-end-2 mt-[24px] md:mt-[0px]">
+            {/* <h4 className="text-[8px] md:text-[14px] col-start-1 col-end-2 mt-[24px] md:mt-[0px]">
               We take security and compliance seriously. That's why we invest in
               resources that keep us compliant with regulatory standards,
               keeping you and your money safe from bad actors.
-            </h4>
+            </h4> */}
             <div className=" col-start-2 col-end-3 ">
               <img className="mx-auto w-[119px]" src={pci} />
             </div>
@@ -621,7 +688,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="bg-white py-[64px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
+      {/* <div className="bg-white py-[64px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
         <div className="relative ">
           <div className="absolute bottom-0 right-0 hidden md:flex">
             <img className="" src={layer} />
@@ -643,7 +710,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-white pb-[64px] xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]  flex justify-center">
         <div className="sm:grid sm:grid-cols-2 xl:grid-cols-4 gap-y-[35px] w-[180px] sm:w-full">
@@ -654,8 +721,8 @@ const Dashboard = () => {
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
               Settlements
             </h4>
-            <h4 className="flex justify-center text-[15px] text-gray-400 text-center">
-              Lightening-fast settlements
+            <h4 className="flex justify-center text-[15px] text-gray-400 text-center mx-[10px]">
+              Payment Options (Verve, Mastercard, Visa, QR, Bank Transfers etc)
             </h4>
           </div>
           <div className="py-[40px] sm:py-[0px] border-b-[1px] xl:border-r-[1px] sm:border-b-[0px] border-gray-300">
@@ -677,7 +744,7 @@ const Dashboard = () => {
               Payout, API
             </h4>
             <h4 className="flex justify-center text-[15px] text-gray-400 text-center">
-              Bulk payments and with withdrawal
+              Currencies (Naira, USD)
             </h4>
           </div>
           <div className="pt-[40px] sm:pt-[0px] ">
@@ -707,8 +774,8 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-3 gap-y-[35px] mx-auto  items-start">
-          <div className="pt-[40px] lg:pt-[0px] ">
+        <div className="xl:grid xl:grid-cols-3 gap-y-[35px] mx-auto  items-start">
+          <div className="pt-[40px] xl:pt-[0px] ">
             <div className="flex justify-center">
               <img className="-mr-[13px] w-[35px] h-[35px]" src={profile1} />
               <img className="-mr-[13px] w-[35px] h-[35px]" src={profile2} />
@@ -716,7 +783,7 @@ const Dashboard = () => {
               <img className="-mr-[13px] w-[35px] h-[35px]" src={profile4} />
             </div>
 
-            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
+            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] xl:w-[311px] xl:mx-auto">
               AlliancePay is the best payment gateway I have used for my online
               business. Their platform is easy to use, supports multiple payment
               channels, and is highly secure and reliable. Their customer
@@ -725,7 +792,7 @@ const Dashboard = () => {
             </h4>
           </div>
 
-          <div className="pt-[40px] lg:pt-[0px] ">
+          <div className="pt-[40px] xl:pt-[0px] ">
             <div className="flex justify-center">
               <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
               <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
@@ -734,17 +801,17 @@ const Dashboard = () => {
               <img className="mx-[2px] w-[24px] h-[24px]" src={star} />
             </div>
 
-            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
+            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] xl:w-[311px] xl:mx-auto">
               5 out of 5 stars from 123 reviews from our users
             </h4>
           </div>
 
-          <div className="pt-[40px] lg:pt-[0px] ">
+          <div className="pt-[40px] xl:pt-[0px] ">
             <div className="flex justify-center">
               <img className="mx-[2px] w-[24px] h-[24px]" src={card} />
             </div>
 
-            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] lg:w-[311px] lg:mx-auto">
+            <h4 className="flex justify-center text-[15px] text-black text-center mt-[16px] xl:w-[311px] xl:mx-auto">
               Their platform is intuitive, efficient, and supports various
               payment channels that cater to my customers' needs. What impressed
               me the most was the speed and ease of integration

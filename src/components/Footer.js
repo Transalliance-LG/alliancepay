@@ -5,6 +5,9 @@ import google from "../assets/google.png";
 import apple from "../assets/apple.png";
 import instagram from "../assets/instagram.png";
 import { IoCloseOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Footer = ({ show2, setShow2 }) => {
   const list = [
@@ -42,22 +45,40 @@ const Footer = ({ show2, setShow2 }) => {
           </h4>
           <div className="grid grid-cols-4 w-[200px]">
             <div>
-              <img className="w-[24px] h-[24px]" src={facebook} />
+              <a
+                href="http://instagram.com/alliancepayhq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="w-[24px] h-[24px]" src={instagram} />
+              </a>
             </div>
             <div>
-              <img className="w-[24px] h-[24px]" src={google} />
+              <a
+                href="http://twitter.com/alliancepayhq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsTwitter className="text-[24px] text-primary" />
+              </a>
             </div>
             <div>
-              <img className="w-[24px] h-[24px]" src={apple} />
-            </div>
-            <div>
-              <img className="w-[24px] h-[24px]" src={instagram} />
+              <a
+                href="http://linkedin.com/company/alliancepayhq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsLinkedin className="text-[24px] text-primary" />
+              </a>
             </div>
           </div>
+          <h4 className="my-[16px] text-[12px] md:text-[16px] lg:text-[16px] font-normal">
+            info@alliancepay.io and sales@alliancepay.io
+          </h4>
         </div>
       </div>
       <div
-        className="lg:flex grid grid-cols-2 justify-between md:gap-[20px]
+        className=" grid grid-cols-2 xl:grid-cols-3 md:gap-[20px]
       lg:gap-[30px] xl:gap-[40px]"
       >
         <div className="w-[300px] hidden lg:flex">
@@ -70,67 +91,132 @@ const Footer = ({ show2, setShow2 }) => {
             </h4>
             <div className="grid grid-cols-4 w-[200px]">
               <div>
-                <img className="w-[24px] h-[24px]" src={facebook} />
+                <a
+                  href="http://instagram.com/alliancepayhq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="w-[24px] h-[24px]" src={instagram} />
+                </a>
               </div>
               <div>
-                <img className="w-[24px] h-[24px]" src={google} />
+                <a
+                  href="http://twitter.com/alliancepayhq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsTwitter className="text-[24px] text-primary" />
+                </a>
               </div>
               <div>
-                <img className="w-[24px] h-[24px]" src={apple} />
-              </div>
-              <div>
-                <img className="w-[24px] h-[24px]" src={instagram} />
+                <a
+                  href="http://linkedin.com/company/alliancepayhq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsLinkedin className="text-[24px] text-primary" />
+                </a>
               </div>
             </div>
+            <h4 className="my-[16px] text-[12px] md:text-[16px] lg:text-[16px] font-normal">
+              info@alliancepay.io and sales@alliancepay.io
+            </h4>
           </div>
         </div>
 
         <div>
           <h1 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[24px] font-semibold">
-            Products
+            Developers
           </h1>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Features
+            Overview
           </h4>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Solutions
-          </h4>
+          <NavLink to="/documentation">
+            <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal cursor-pointer">
+              Documentation
+            </h4>
+          </NavLink>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Integrations
           </h4>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+          {/* <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Enterprise
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Solutions
-          </h4>
+          </h4> */}
         </div>
+
         <div>
           <h1 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[24px] font-semibold">
-            Resources
+            Company
           </h1>
+          <NavLink to="/about">
+            <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal cursor-pointer">
+              About Us
+            </h4>
+          </NavLink>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Partners
+            Talk to sales (sales@alliancepay.io)
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Community
+            Contact Support
           </h4>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Developers
-          </h4>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+          {/* <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             App
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Blog
+          </h4> */}
+        </div>
+
+        <div>
+          <h1 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[24px] font-semibold">
+            Legal
+          </h1>
+          <h4
+            onClick={() => setShow2(!show2)}
+            className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal cursor-pointer"
+          >
+            Privacy Policy
           </h4>
+          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+            News
+          </h4>
+          {/* <button
+            onClick={() => setShow2(!show2)}
+            className="rounded-[10px] bg-primary hover:bg-blue-800  text-white md:px-[18px] md:py-[10px] px-[10px] py-[8px] text-[12px] md:text-[16px] sm:text-[16px]"
+          >
+            IMS policy
+          </button> */}
+        </div>
+
+        <div>
+          <h1 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[24px] font-semibold">
+            Pricing
+          </h1>
+          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+            Local
+          </h4>
+          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+            International
+          </h4>
+          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+            Payouts (Shared above)
+          </h4>
+          {/* <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+            App
+          </h4>
+          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+            Blog
+          </h4> */}
         </div>
 
         <div>
           <h1 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[24px] font-semibold">
             Why Choose Us?
           </h1>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
+          {/* <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Channels
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
@@ -141,26 +227,10 @@ const Footer = ({ show2, setShow2 }) => {
           </h4>
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Our Competition
-          </h4>
-        </div>
-        <div>
-          <h1 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[24px] font-semibold">
-            Company
-          </h1>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            About Us
-          </h4>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            News
-          </h4>
-          <button
-            onClick={() => setShow2(!show2)}
-            className="rounded-[10px] bg-primary hover:bg-blue-800  text-white md:px-[18px] md:py-[10px] px-[10px] py-[8px] text-[12px] md:text-[16px] sm:text-[16px]"
-          >
-            IMS policy
-          </button>
+          </h4> */}
         </div>
       </div>
+
       <h4 className="flex justify-center text-gray-400 mt-[64px] text-[12px] md:text-[16px] lg:text-[16px]">
         © 2023 Alliancepay. All Rights Reserved.
       </h4>

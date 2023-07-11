@@ -11,12 +11,12 @@ const Navbar = ({ show, setShow }) => {
     <div className="xl:px-[150px] 2xl:px-[250px] lg:px-[70px] px-[15px] md:px-[30px]">
       <div className=" bg-white lg:py-[16px] py-[20px] flex justify-between items-center ">
         <div>
-          <NavLink to="#">
+          <NavLink to="/">
             <img src={logo} />
           </NavLink>
         </div>
         <div className="xl:flex hidden">
-          <div className=" flex items-center px-[16px]">
+          {/* <div className=" flex items-center px-[16px]">
             <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] ">
               <NavLink
                 to="/"
@@ -30,7 +30,7 @@ const Navbar = ({ show, setShow }) => {
             <div>
               <img className="w-[10px]" src={down} />
             </div>
-          </div>
+          </div> */}
           <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] px-[16px]">
             <NavLink
               to="/about"
@@ -41,6 +41,19 @@ const Navbar = ({ show, setShow }) => {
               About us
             </NavLink>
           </h4>
+
+          <div className=" flex items-center px-[16px]">
+            <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] ">
+              <NavLink
+                to="/pricing"
+                style={({ isActive }) => {
+                  return { color: isActive ? "#2E3192" : "black" };
+                }}
+              >
+                Pricing
+              </NavLink>
+            </h4>
+          </div>
 
           <div className=" flex items-center px-[16px]">
             <h4 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] ">
@@ -94,7 +107,9 @@ const Navbar = ({ show, setShow }) => {
       >
         <div className="bg-white lg:py-[16px] py-[20px] flex justify-between items-center xl:hidden">
           <div className="invisible">
-            <img src={logo} />
+            <NavLink to="/">
+              <img src={logo} />
+            </NavLink>
           </div>
           <div className="hover:cursor-pointer">
             <img
@@ -106,7 +121,7 @@ const Navbar = ({ show, setShow }) => {
         </div>
         <div className="flex justify-center">
           <div className=" xl:hidden">
-            <div className="  lg:px-[16px] h-[70px] min-h-fit">
+            {/* <div className="  lg:px-[16px] h-[70px] min-h-fit">
               <h4
                 onClick={() => setShow(!show)}
                 className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] hover:cursor-pointer flex justify-center"
@@ -120,7 +135,7 @@ const Navbar = ({ show, setShow }) => {
                   Home
                 </NavLink>
               </h4>
-            </div>
+            </div> */}
             <div className="h-[70px] min-h-fit">
               <h4
                 onClick={() => setShow(!show)}
@@ -133,6 +148,22 @@ const Navbar = ({ show, setShow }) => {
                   }}
                 >
                   About us
+                </NavLink>
+              </h4>
+            </div>
+
+            <div className="  lg:px-[16px] h-[70px] min-h-fit">
+              <h4
+                onClick={() => setShow(!show)}
+                className="text-black text-[12px] md:text-[16px] lg:text-[16px] font-medium mr-[8px] hover:cursor-pointer flex justify-center"
+              >
+                <NavLink
+                  to="/pricing"
+                  style={({ isActive }) => {
+                    return { color: isActive ? "#2E3192" : "black" };
+                  }}
+                >
+                  Pricing
                 </NavLink>
               </h4>
             </div>

@@ -193,8 +193,10 @@ const Contactus = () => {
           <h4 className="flex justify-center text-[15px] mt-[10px] text-gray-400 text-center">
             Our friendly team is here to help.
           </h4>
-          <h4 className="flex justify-center text-[15px] mt-[10px] text-primary text-center">
-            info@alliancepay.io
+          <h4 className="flex justify-center text-[15px]  text-primary text-center">
+            <h4 className="mb-[16px] mt-[10px] text-[12px] md:text-[16px] lg:text-[16px] font-normal">
+              info@alliancepay.io and sales@alliancepay.io
+            </h4>
           </h4>
         </div>
 
