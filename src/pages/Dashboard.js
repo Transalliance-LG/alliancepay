@@ -730,7 +730,7 @@ const Dashboard = () => {
               <img className="w-[38px] h-[38px]" src={link} />
             </div>
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
-              Pay-ins
+              Payment Links
             </h4>
             <h4 className="flex justify-center text-[15px] text-gray-400 text-center">
               Sell faster with payment links
@@ -752,7 +752,7 @@ const Dashboard = () => {
               <img className="w-[38px] h-[38px]" src={driver} />
             </div>
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
-              Balance, API
+              Simple API
             </h4>
             <h4 className="flex justify-center text-[15px] text-gray-400 text-center">
               Real-time balances
