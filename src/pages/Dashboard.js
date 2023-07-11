@@ -280,7 +280,7 @@ const Dashboard = () => {
                 <img src={icon1} />
               </div>
               <h1 className="text-[14px] 2xl:text-[22px] lg:text-[24px] font-semibold">
-                Accept payments
+                Receive Payments
               </h1>
             </div>
             <div className="flex justify-center mt-[15px] h-[62px] w-[62px] md:w-auto md:h-auto mx-auto">
