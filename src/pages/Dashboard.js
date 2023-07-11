@@ -656,11 +656,11 @@ const Dashboard = () => {
                 </div>
 
                 <h4 className="mt-[10px] text-[12px] md:text-[16px]  z-40  mb-[24px] md:mt-[0px] font-medium">
-                  To ensure a secure and seamless payment experience for our
+                  {/* To ensure a secure and seamless payment experience for our
                   customers, we have developed a payment infrastructure with
                   security at its core. Our advanced system is equipped with a
                   real-time AML transaction monitoring system that safeguards
-                  all transactions in real-time.
+                  all transactions in real-time. */}
                   <br></br>
                   We are PCI-DSS Compliant which signifies that AlliancePay has
                   satisfied the highest measures of Security Audit. Your
