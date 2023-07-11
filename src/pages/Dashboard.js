@@ -719,10 +719,10 @@ const Dashboard = () => {
               <img className="w-[38px] h-[38px]" src={light2} />
             </div>
             <h4 className="flex justify-center text-[18px] font-semibold mt-[22px]">
-              Settlements
+              Payment Options
             </h4>
             <h4 className="flex justify-center text-[15px] text-gray-400 text-center mx-[10px]">
-              Payment Options (Verve, Mastercard, Visa, QR, Bank Transfers etc)
+              Verve, Mastercard, Visa, QR, Bank Transfers etc
             </h4>
           </div>
           <div className="py-[40px] sm:py-[0px] border-b-[1px] xl:border-r-[1px] sm:border-b-[0px] border-gray-300">
