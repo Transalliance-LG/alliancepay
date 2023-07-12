@@ -3,7 +3,7 @@ import abouticon from "../assets/abouticon.png";
 import background02 from "../assets/background02.png";
 import down2 from "../assets/down2.png";
 import ceo from "../assets/ceo.jpg";
-import md from "../assets/md.jpeg";
+import md from "../assets/md.jpg";
 import clo from "../assets/clo.jpeg";
 import coo from "../assets/coo.jpg";
 import cfo from "../assets/cfo.jpg";
