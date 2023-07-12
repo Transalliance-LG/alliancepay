@@ -156,12 +156,21 @@ const Footer = ({ show2, setShow2 }) => {
               About Us
             </h4>
           </NavLink>
-          <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
-            Talk to sales (sales@alliancepay.io)
-          </h4>
+
+          <a
+              href="mailto:sales@alliancepay.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <h4 className="font-semibold text-[12px] sm:text-[14px] text-center w-[120px] sm:w-auto">
+              Talk to sales
+            </h4>
+          </a>
+
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Contact Support
           </h4>
+          
           {/* <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             App
           </h4>
