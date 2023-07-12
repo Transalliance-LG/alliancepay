@@ -119,7 +119,7 @@ const Footer = ({ show2, setShow2 }) => {
               </div>
             </div>
             <h4 className="my-[16px] text-[12px] md:text-[16px] lg:text-[16px] font-normal">
-              info@alliancepay.io and sales@alliancepay.io
+              info@alliancepay.io, sales@alliancepay.io
             </h4>
           </div>
         </div>
