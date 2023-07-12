@@ -4,11 +4,14 @@ import background02 from "../assets/background02.png";
 import down2 from "../assets/down2.png";
 import ceo from "../assets/ceo.jpg";
 import md from "../assets/md.jpg";
-import clo from "../assets/clo.jpeg";
+import lovelyn from "../assets/lovelyn.jpg";
 import coo from "../assets/coo.jpg";
 import cfo from "../assets/cfo.jpg";
 import cto from "../assets/cto.jpg";
 import cpo from "../assets/cpo.jpeg";
+import temi from "../assets/temi.jpg";
+import gift from "../assets/gift.jpg";
+import omo from "../assets/omo.jpg";
 
 const About = () => {
   const [clickedIndex, setClickedIndex] = useState({});
@@ -262,9 +265,9 @@ const About = () => {
 
           <div className="flex justify-center mt-[32px] lg:mt-[0px]">
             <div>
-              {/* <div>
-                <img className="w-[384px]" src={} />
-              </div> */}
+              <div>
+                <img className="w-[384px]" src={temi} />
+              </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Temitope Oyesanya
               </h4>
@@ -276,9 +279,9 @@ const About = () => {
 
           <div className="flex justify-center mt-[32px] lg:mt-[0px]">
             <div>
-              {/* <div>
-                <img className="w-[384px]" src={} />
-              </div> */}
+              <div>
+                <img className="w-[384px]" src={gift} />
+              </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Gift Ogbonna
               </h4>
@@ -291,7 +294,7 @@ const About = () => {
           <div className="flex justify-center mt-[32px] lg:mt-[0px]">
             <div>
               <div>
-                <img className="w-[384px]" src={clo} />
+                <img className="w-[384px]" src={lovelyn} />
               </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Lovelyn Mark
@@ -304,9 +307,9 @@ const About = () => {
 
           <div className="flex justify-center mt-[32px] lg:mt-[0px]">
             <div>
-              {/* <div>
-                <img className="w-[384px]" src={} />
-              </div> */}
+              <div>
+                <img className="w-[384px]" src={omo} />
+              </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Olufemi Ojo-Omoniyi
               </h4>
