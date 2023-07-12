@@ -44,7 +44,7 @@ const Pricing = () => {
 
         <div className="my-[20px] md:py-[40px]">
           <h4 className="md:text-[20px] text-[16px] font-medium text-center">
-            International Collection
+            International Collection - 4% 
           </h4>
           <div className="grid md:grid-cols-6 grid-cols-4 gap-y-[15px] mt-[15px]">
             <img className="w-[60px] mx-auto" src={master} />
