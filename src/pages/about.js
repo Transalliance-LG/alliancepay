@@ -7,6 +7,7 @@ import md from "../assets/md.jpg";
 import clo from "../assets/clo.jpeg";
 import coo from "../assets/coo.jpg";
 import cfo from "../assets/cfo.jpg";
+import cto from "../assets/cto.jpg";
 import cpo from "../assets/cpo.jpeg";
 
 const About = () => {
@@ -249,9 +250,9 @@ const About = () => {
 
           <div className="flex justify-center mt-[32px] lg:mt-[0px]">
             <div>
-              {/* <div>
-                <img className="w-[384px]" src={} />
-              </div> */}
+              <div>
+                <img className="w-[384px]" src={cto} />
+              </div>
               <h4 className="mt-[16px] font-semibold md:text-[22px] text-[18px] ">
                 Tim Adedoyin
               </h4>
