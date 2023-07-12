@@ -8,7 +8,7 @@ import lovelyn from "../assets/lovelyn.jpg";
 import coo from "../assets/coo.jpg";
 import cfo from "../assets/cfo.jpg";
 import cto from "../assets/cto.jpg";
-import cpo from "../assets/cpo.jpeg";
+import cpo from "../assets/cpo.jpg";
 import temi from "../assets/temi.jpg";
 import gift from "../assets/gift.jpg";
 import omo from "../assets/omo.jpg";
