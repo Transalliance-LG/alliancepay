@@ -157,8 +157,7 @@ const Footer = ({ show2, setShow2 }) => {
             </h4>
           </NavLink>
 
-          <a
-              href="mailto:sales@alliancepay.io"
+          <a href="mailto:sales@alliancepay.io"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -170,7 +169,7 @@ const Footer = ({ show2, setShow2 }) => {
           <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             Contact Support
           </h4>
-          
+
           {/* <h4 className="text-[12px] md:text-[16px] lg:text-[16px] mb-[12px] font-normal">
             App
           </h4>
