@@ -75,7 +75,7 @@ const Dashboard = () => {
           </m.div>
           <div >
 
-            <img src={logo} className="lg:flex"/>
+            <img src={logo} className="flex justify-center"/>
             {/* <m.h4
               initial={{ opacity: 1, y: "-100%" }}
               animate={{ opacity: 1, y: 0 }}
