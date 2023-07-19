@@ -4,6 +4,7 @@ import { motion as m } from "framer-motion";
 import background from "../assets/background.png";
 import crown from "../assets/crown.png";
 import light from "../assets/light.png";
+import logo from "../assets/logo.svg";
 import layer from "../assets/layer.png";
 import sis from "../assets/sis.png";
 import circooles from "../assets/circooles.png";
@@ -73,6 +74,7 @@ const Dashboard = () => {
             <img src={crown} />
           </m.div>
           <div>
+            <img src={logo} />
             {/* <m.h4
               initial={{ opacity: 1, y: "-100%" }}
               animate={{ opacity: 1, y: 0 }}
@@ -124,10 +126,10 @@ const Dashboard = () => {
             {/* We’ve been told it is not possible to overachieve our customers’
             expectations. We have not reinvented the wheel, we decided to build
             upon it. */}
-            Alliancepay simplifies payments one merchant at a time.
+            A new Era of Payment Solution
           </m.h4>
           <div className="flex lg:mt-[44px] mt-[17px] justify-center lg:justify-start">
-            <Link to="/">
+            {/* <Link to="/">
               <m.button
                 initial={{ opacity: 1, x: "-100%" }}
                 animate={{ opacity: 1, x: 0 }}
@@ -139,7 +141,7 @@ const Dashboard = () => {
               >
                 Get Started
               </m.button>
-            </Link>
+            </Link> */}
 
             <m.div
               initial={{ opacity: 1, x: "100%" }}
