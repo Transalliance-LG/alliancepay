@@ -20,7 +20,7 @@ function App() {
       <div className={show ? `font-poppins hidden xl:inline` : ` font-poppins`}>
         <div>
           <Routes>
-            <Route exact path="/" element={<Dashboard />} />
+            <Route exact path="/" element={<Coming />} />
             <Route exact path="/:page" element={<PageRender />} />
           </Routes>
 
