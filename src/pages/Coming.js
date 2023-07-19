@@ -61,7 +61,7 @@ const Dashboard = () => {
         >
           <img className="mx-auto mb-[28px]" src={background} />
         </m.div>
-        <div className="relative">
+        <div className="flex items-center justify-center">
           <m.div
             initial={{ opacity: 0, x: "-100%" }}
             animate={{ opacity: 1, x: 0 }}
@@ -73,7 +73,8 @@ const Dashboard = () => {
           >
             <img src={crown} />
           </m.div>
-          <div>
+          <div className="text-center">
+
             <img src={logo} />
             {/* <m.h4
               initial={{ opacity: 1, y: "-100%" }}
