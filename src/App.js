@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import PageRender from "./customRouter/PageRender";
-import Dashboard from "./pages/Dashboard";
+import Coming from "./pages/Coming";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -12,10 +12,10 @@ function App() {
 
   return (
     <Router>
-      {/* <div className="font-poppins">
+      <div className="font-poppins">
         {" "}
         <Navbar show={show} setShow={setShow} />
-      </div> */}
+      </div>
 
       <div className={show ? `font-poppins hidden xl:inline` : ` font-poppins`}>
         <div>
@@ -24,7 +24,7 @@ function App() {
             <Route exact path="/:page" element={<PageRender />} />
           </Routes>
 
-          {/* <Footer show2={show2} setShow2={setShow2} /> */}
+          <Footer show2={show2} setShow2={setShow2} />
         </div>
       </div>
     </Router>

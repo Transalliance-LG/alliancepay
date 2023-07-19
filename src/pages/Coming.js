@@ -73,7 +73,7 @@ const Dashboard = () => {
             <img src={crown} />
           </m.div>
           <div>
-            <m.h4
+            {/* <m.h4
               initial={{ opacity: 1, y: "-100%" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -83,7 +83,7 @@ const Dashboard = () => {
               className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-center lg:text-start leading-10"
             >
               Join the Revolution of
-            </m.h4>
+            </m.h4> */}
             <m.h4
               initial={{ opacity: 0, y: "-100%" }}
               animate={{ opacity: 1, y: 0 }}
@@ -93,9 +93,9 @@ const Dashboard = () => {
               }}
               className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold text-primary  text-center lg:text-start leading-10"
             >
-              Seamless Transactions
+              Coming Soon
             </m.h4>
-            <m.div
+            {/* <m.div
               initial={{ opacity: 0, y: "-100%" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -110,7 +110,7 @@ const Dashboard = () => {
               <h4 className="md:text-[35px] text-[30px] xl:text-[40px] font-semibold  text-primary leading-10">
                 AlliancePay
               </h4>
-            </m.div>
+            </m.div> */}
           </div>
           <m.h4
             initial={{ opacity: 0, y: "-100%" }}
@@ -159,7 +159,7 @@ const Dashboard = () => {
                 rel="noopener noreferrer"
               >
                 <h4 className="font-semibold text-[12px] sm:text-[14px] text-center w-[120px] sm:w-auto">
-                  Contact Sales
+                  Contact Support
                 </h4>
               </a>
             </m.div>
